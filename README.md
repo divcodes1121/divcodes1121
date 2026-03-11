@@ -1,4 +1,4 @@
-<h1 align="center">⚡ Divyanshu Singh ⚡</h1>
+<h1 align="center"> Divyanshu Singh </h1>
 <h3 align="center">Domain Expansion: Code Infinity</h3>
 
 <p align="center">
