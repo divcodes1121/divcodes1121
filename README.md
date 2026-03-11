@@ -2,7 +2,7 @@
 <h3 align="center">Aspiring Software Engineer | AI/ML | Backend Developer</h3>
 
 <p align="center">
-<img src="https://readme-typing-svg.herokuapp.com/?lines=AI+Engineer;Python+Backend+Developer;Machine+Learning+Enthusiast;Open+Source+Contributor&center=true&width=500&height=50">
+<img src="https://readme-typing-svg.herokuapp.com/?lines=AI+Engineer;Python+Backend+Developer;Machine+Learning+Enthusiast;Open+Source+Contributor&center=true&width=520&height=50">
 </p>
 
 <p align="center">
@@ -11,81 +11,96 @@
 
 ---
 
-## 🚀 About Me
+# 🚀 About Me
 
-🎓 CSE (AI & ML) Student at **VIT-AP**
-💻 Passionate about **Backend Systems, AI, and Cloud**
-⚡ Building scalable systems and AI-powered applications
-🧠 Strong in **Python, Java, and Full Stack Development**
-🏆 Solving **DSA problems on LeetCode**
-
----
-
-## 🌐 Connect With Me
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?logo=linkedin)](https://www.linkedin.com/in/divyanshu-singh1121/)
-[![LeetCode](https://img.shields.io/badge/LeetCode-orange?logo=leetcode)](https://leetcode.com/u/Div_Codes1121/)
+🎓 CSE (AI & ML) @ **VIT-AP University**
+💻 Passionate about **Backend Engineering, AI Systems & Cloud**
+⚡ Building scalable systems and AI powered applications
+🧠 Strong in **Python, Java, ML, Full Stack Development**
 
 ---
 
-## 🛠 Tech Stack
+# 🌐 Connect With Me
 
-![Python](https://img.shields.io/badge/Python-blue?logo=python)
-![Java](https://img.shields.io/badge/Java-red?logo=java)
-![JavaScript](https://img.shields.io/badge/JavaScript-yellow?logo=javascript)
-![React](https://img.shields.io/badge/React-blue?logo=react)
-![NodeJS](https://img.shields.io/badge/NodeJS-green?logo=node.js)
-![Docker](https://img.shields.io/badge/Docker-blue?logo=docker)
-![Kubernetes](https://img.shields.io/badge/Kubernetes-blue?logo=kubernetes)
-![AWS](https://img.shields.io/badge/AWS-orange?logo=amazonaws)
-![MySQL](https://img.shields.io/badge/MySQL-blue?logo=mysql)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-blue?logo=postgresql)
+<p align="left">
+<a href="https://www.linkedin.com/in/divyanshu-singh1121/">
+<img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin"/>
+</a>
 
----
-
-## 📊 GitHub Stats
-
-![Divyanshu's GitHub stats](https://github-readme-stats.vercel.app/api?username=divcodes1121\&show_icons=true\&theme=tokyonight)
-
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=divcodes1121\&layout=compact\&theme=tokyonight)
-
-![GitHub Streak](https://streak-stats.demolab.com/?user=divcodes1121\&theme=tokyonight)
+<a href="https://leetcode.com/u/Div_Codes1121/">
+<img src="https://img.shields.io/badge/LeetCode-orange?style=for-the-badge&logo=leetcode"/>
+</a>
+</p>
 
 ---
 
-## 🔥 Featured Projects
+# 🛠 Tech Stack
+
+<p>
+<img src="https://skillicons.dev/icons?i=python,java,js,react,nodejs,docker,kubernetes,aws,postgres,mysql,git,linux"/>
+</p>
+
+---
+
+# 📊 GitHub Stats
+
+<p align="center">
+<img src="https://github-readme-stats.vercel.app/api?username=divcodes1121&show_icons=true&theme=tokyonight&hide_border=true"/>
+</p>
+
+<p align="center">
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=divcodes1121&layout=compact&theme=tokyonight&hide_border=true"/>
+</p>
+
+<p align="center">
+<img src="https://streak-stats.demolab.com/?user=divcodes1121&theme=tokyonight&hide_border=true"/>
+</p>
+
+---
+
+# 🏆 GitHub Trophies
+
+<p align="center">
+<img src="https://github-profile-trophy.vercel.app/?username=divcodes1121&theme=tokyonight&row=1&column=6"/>
+</p>
+
+---
+
+# 🧠 LeetCode Stats
+
+<p align="center">
+<img src="https://leetcard.jacoblin.cool/Div_Codes1121?theme=dark&font=baloo"/>
+</p>
+
+---
+
+# 📈 Contribution Graph
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=divcodes1121&theme=tokyo-night"/>
+
+---
+
+# 🔥 Featured Projects
 
 🚇 **Metro Ticket Booking System**
-Java + Spring Boot backend for metro ticket reservations.
+Java + Spring Boot backend for metro reservations
 
 🤖 **AI Support Ticket Management System**
-LLM-powered system that analyzes and prioritizes support tickets.
+LLM powered system to classify and route support tickets
 
-🏡 **Property Rental Platform**
-Full-stack MERN platform for property listing and booking.
+🏡 **Property Rental Platform (MERN)**
+Full stack platform for property listing and booking
 
 📈 **BTC Price Tracker**
-Dockerized backend system with JWT authentication and real-time crypto price tracking.
+Dockerized backend system with JWT auth and real time crypto price tracking
 
-🧠 **House Price Prediction Model**
-Machine learning regression model for predicting housing prices.
-
----
-
-## 🏆 GitHub Trophies
-
-![trophy](https://github-profile-trophy.vercel.app/?username=divcodes1121\&theme=tokyonight)
+🧠 **House Price Prediction ML Model**
+Advanced regression model for real estate prediction
 
 ---
 
-## 👀 Profile Views
+# 👀 Profile Visitors
 
-![Profile Views](https://komarev.com/ghpvc/?username=divcodes1121)
-
----
-
-## 🐍 Contribution Snake
-
-![snake gif](https://github.com/divcodes1121/divcodes1121/blob/output/github-contribution-grid-snake.svg)
+<img src="https://komarev.com/ghpvc/?username=divcodes1121&color=blue"/>
 
 ---
