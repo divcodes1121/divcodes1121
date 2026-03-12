@@ -44,10 +44,11 @@
 
 ---
 
-# 🏆 GitHub Trophies
-
+#  Cursed Energy Stats
 <p align="center">
-<img src="https://github-profile-trophy.vercel.app/?username=divcodes1121&theme=tokyonight&row=1&column=7"/>
+  <a href="https://divcodes1121.github.io/divcodes1121/matrix-stats.html">
+    <img src="https://readme-typing-svg.herokuapp.com/?lines=Click+to+Enter+the+Matrix...&center=true&color=8A2BE2&width=400"/>
+  </a>
 </p>
 
 ---
