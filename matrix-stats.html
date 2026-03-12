@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Divyanshu Singh — Cursed Code Matrix</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Rajdhani:wght@300;500;700&family=Orbitron:wght@400;700;900&display=swap');
+
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+  :root {
+    --matrix-green: #00ff41;
+    --matrix-dim: #003b00;
+    --purple: #8A2BE2;
+    --purple-glow: #b44dff;
+    --bg: #000000;
+    --card-bg: rgba(0, 0, 0, 0.82);
+    --border: rgba(138, 43, 226, 0.5);
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--matrix-green);
+    font-family: 'Share Tech Mono', monospace;
+    overflow-x: hidden;
+    min-height: 100vh;
+    cursor: crosshair;
+  }
+
+  canvas#matrix {
+    position: fixed;
+    top: 0; left: 0;
+    z-index: 0;
+    opacity: 0.18;
+  }
+
+  .container {
+    position: relative;
+    z-index: 10;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 40px 24px 60px;
+  }
+
+  /* ── HEADER ── */
+  .header {
+    text-align: center;
+    margin-bottom: 48px;
+    animation: fadeDown 1s ease both;
+  }
+
+  .header-tag {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 4px;
+    color: var(--matrix-green);
+    opacity: 0.6;
+    margin-bottom: 12px;
+  }
+
+  .header h1 {
+    font-family: 'Orbitron', monospace;
+    font-size: clamp(28px, 5vw, 52px);
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: #fff;
+    text-shadow: 0 0 20px var(--purple-glow), 0 0 60px var(--purple);
+    line-height: 1.1;
+  }
+
+  .header h1 span { color: var(--purple-glow); }
+
+  .header-sub {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 6px;
+    color: var(--matrix-green);
+    margin-top: 10px;
+    opacity: 0.8;
+  }
+
+  .domain-tag {
+    display: inline-block;
+    margin-top: 16px;
+    padding: 6px 20px;
+    border: 1px solid var(--purple);
+    border-radius: 2px;
+    font-size: 11px;
+    letter-spacing: 5px;
+    color: var(--purple-glow);
+    text-shadow: 0 0 8px var(--purple);
+    box-shadow: 0 0 12px rgba(138,43,226,0.3), inset 0 0 12px rgba(138,43,226,0.05);
+    animation: pulseBorder 3s ease-in-out infinite;
+  }
+
+  /* ── STATS GRID ── */
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+    margin-bottom: 32px;
+    animation: fadeUp 1s 0.3s ease both;
+  }
+
+  .stat-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 22px 20px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.25s, box-shadow 0.25s, border-color 0.25s;
+  }
+
+  .stat-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--purple), transparent);
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+
+  .stat-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--purple-glow);
+    box-shadow: 0 8px 32px rgba(138,43,226,0.3);
+  }
+
+  .stat-card:hover::before { opacity: 1; }
+
+  .stat-label {
+    font-size: 10px;
+    letter-spacing: 3px;
+    color: var(--matrix-green);
+    opacity: 0.6;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+  }
+
+  .stat-value {
+    font-family: 'Orbitron', monospace;
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 0 0 12px var(--purple-glow);
+    line-height: 1;
+  }
+
+  .stat-value.green {
+    color: var(--matrix-green);
+    text-shadow: 0 0 12px var(--matrix-green);
+  }
+
+  .stat-sub {
+    font-size: 11px;
+    color: var(--purple-glow);
+    margin-top: 6px;
+    opacity: 0.8;
+  }
+
+  /* ── SKILL BARS ── */
+  .skills-section {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 28px 24px;
+    margin-bottom: 32px;
+    animation: fadeUp 1s 0.5s ease both;
+  }
+
+  .section-title {
+    font-family: 'Orbitron', monospace;
+    font-size: 12px;
+    letter-spacing: 5px;
+    color: var(--purple-glow);
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .section-title::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(90deg, var(--purple), transparent);
+  }
+
+  .skill-row {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 14px;
+  }
+
+  .skill-name {
+    width: 110px;
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: #ccc;
+    flex-shrink: 0;
+  }
+
+  .skill-bar-bg {
+    flex: 1;
+    height: 6px;
+    background: rgba(255,255,255,0.06);
+    border-radius: 3px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .skill-bar-fill {
+    height: 100%;
+    border-radius: 3px;
+    width: 0;
+    transition: width 1.8s cubic-bezier(0.23, 1, 0.32, 1);
+    position: relative;
+  }
+
+  .skill-bar-fill::after {
+    content: '';
+    position: absolute;
+    right: 0; top: 0;
+    width: 6px; height: 100%;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 6px #fff;
+    opacity: 0.9;
+  }
+
+  .skill-bar-fill.purple { background: linear-gradient(90deg, var(--purple), var(--purple-glow)); }
+  .skill-bar-fill.green  { background: linear-gradient(90deg, #006600, var(--matrix-green)); }
+  .skill-bar-fill.cyan   { background: linear-gradient(90deg, #004d4d, #00ffff); }
+
+  .skill-pct {
+    width: 36px;
+    font-size: 11px;
+    text-align: right;
+    color: var(--matrix-green);
+    flex-shrink: 0;
+  }
+
+  /* ── BOTTOM ROW ── */
+  .bottom-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    animation: fadeUp 1s 0.7s ease both;
+  }
+
+  @media (max-width: 600px) { .bottom-row { grid-template-columns: 1fr; } }
+
+  .info-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 24px 20px;
+  }
+
+  .info-card ul { list-style: none; }
+  .info-card ul li {
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #aaa;
+    padding: 7px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .info-card ul li:last-child { border-bottom: none; }
+  .info-card ul li span { color: var(--matrix-green); font-size: 11px; }
+
+  .terminal-line {
+    font-size: 12px;
+    line-height: 2;
+    color: rgba(0,255,65,0.7);
+    overflow: hidden;
+  }
+
+  .terminal-line .prompt { color: var(--purple-glow); }
+  .terminal-line .cmd    { color: #fff; }
+  .terminal-line .out    { color: var(--matrix-green); padding-left: 16px; }
+
+  /* cursor blink */
+  .cursor {
+    display: inline-block;
+    width: 8px; height: 14px;
+    background: var(--matrix-green);
+    vertical-align: middle;
+    animation: blink 1s step-end infinite;
+  }
+
+  /* ── FOOTER ── */
+  .footer {
+    text-align: center;
+    margin-top: 48px;
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: rgba(138,43,226,0.5);
+    animation: fadeUp 1s 0.9s ease both;
+  }
+
+  /* ── ANIMATIONS ── */
+  @keyframes fadeDown {
+    from { opacity:0; transform: translateY(-30px); }
+    to   { opacity:1; transform: translateY(0); }
+  }
+  @keyframes fadeUp {
+    from { opacity:0; transform: translateY(24px); }
+    to   { opacity:1; transform: translateY(0); }
+  }
+  @keyframes pulseBorder {
+    0%,100% { box-shadow: 0 0 12px rgba(138,43,226,0.3), inset 0 0 12px rgba(138,43,226,0.05); }
+    50%      { box-shadow: 0 0 24px rgba(138,43,226,0.6), inset 0 0 20px rgba(138,43,226,0.12); }
+  }
+  @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
+
+  /* scanline overlay */
+  body::after {
+    content: '';
+    position: fixed;
+    inset: 0;
+    z-index: 5;
+    background: repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      rgba(0,0,0,0.07) 2px,
+      rgba(0,0,0,0.07) 4px
+    );
+    pointer-events: none;
+  }
+</style>
+</head>
+<body>
+
+<canvas id="matrix"></canvas>
+
+<div class="container">
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="header-tag">// PROFILE.SYS — LOADED</div>
+    <h1>DIVYANSHU <span>SINGH</span></h1>
+    <div class="header-sub">AI ENGINEER · BACKEND DEVELOPER · ML ENTHUSIAST</div>
+    <div class="domain-tag">⚡ DOMAIN EXPANSION : CODE INFINITY ⚡</div>
+  </div>
+
+  <!-- STAT CARDS -->
+  <div class="stats-grid">
+    <div class="stat-card">
+      <div class="stat-label">// Cursed Energy Level</div>
+      <div class="stat-value green" id="counter-commits">0</div>
+      <div class="stat-sub">total commits</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">// Cursed Techniques</div>
+      <div class="stat-value" id="counter-repos">0</div>
+      <div class="stat-sub">repositories</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">// Allies Gained</div>
+      <div class="stat-value green" id="counter-stars">0</div>
+      <div class="stat-sub">github stars</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">// LeetCode Problems</div>
+      <div class="stat-value" id="counter-leet">0</div>
+      <div class="stat-sub">problems solved</div>
+    </div>
+  </div>
+
+  <!-- SKILL BARS -->
+  <div class="skills-section">
+    <div class="section-title">// CURSED TECHNIQUES — PROFICIENCY</div>
+    <div id="skills-container"></div>
+  </div>
+
+  <!-- BOTTOM ROW -->
+  <div class="bottom-row">
+
+    <div class="info-card">
+      <div class="section-title">// ARSENAL</div>
+      <ul>
+        <li>Languages <span>Python · Java · JS</span></li>
+        <li>Backend <span>Spring Boot · Node</span></li>
+        <li>AI / ML <span>PyTorch · Scikit</span></li>
+        <li>Cloud <span>AWS · Docker · K8s</span></li>
+        <li>Database <span>PostgreSQL · MySQL</span></li>
+        <li>University <span>VIT-AP · CSE (AI&ML)</span></li>
+      </ul>
+    </div>
+
+    <div class="info-card">
+      <div class="section-title">// TERMINAL</div>
+      <div class="terminal-line">
+        <span class="prompt">div@infinity:~$ </span><span class="cmd">whoami</span><br>
+        <span class="out">AI Engineer · Sorcerer Grade: S</span><br>
+        <span class="prompt">div@infinity:~$ </span><span class="cmd">cat mission.txt</span><br>
+        <span class="out">Build scalable intelligent systems</span><br>
+        <span class="prompt">div@infinity:~$ </span><span class="cmd">./deploy --prod</span><br>
+        <span class="out">Cursed energy: ████████░░ 80%</span><br>
+        <span class="prompt">div@infinity:~$ </span><span class="cursor"></span>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    ⚡ &nbsp;"THROUGHOUT HEAVEN AND EARTH, I ALONE AM THE CODING ONE."&nbsp; ⚡
+  </div>
+
+</div>
+
+<script>
+/* ── MATRIX RAIN ── */
+(function() {
+  const canvas = document.getElementById('matrix');
+  const ctx = canvas.getContext('2d');
+  const chars = 'アイウエオカキクケコサシスセソタチツテトナニヌネノ0123456789ABCDEF<>{}[];()+-=/*∞';
+  let W, H, cols, drops;
+
+  function resize() {
+    W = canvas.width  = window.innerWidth;
+    H = canvas.height = window.innerHeight;
+    cols = Math.floor(W / 18);
+    drops = Array(cols).fill(1);
+  }
+
+  function draw() {
+    ctx.fillStyle = 'rgba(0,0,0,0.05)';
+    ctx.fillRect(0, 0, W, H);
+    for (let i = 0; i < cols; i++) {
+      const bright = Math.random() > 0.92;
+      ctx.fillStyle = bright ? '#8A2BE2' : '#00ff41';
+      ctx.font = `${bright ? 'bold ' : ''}14px "Share Tech Mono", monospace`;
+      ctx.fillText(chars[Math.floor(Math.random()*chars.length)], i*18, drops[i]*18);
+      if (drops[i]*18 > H && Math.random() > 0.975) drops[i] = 0;
+      drops[i]++;
+    }
+  }
+
+  resize();
+  window.addEventListener('resize', resize);
+  setInterval(draw, 40);
+})();
+
+/* ── COUNTER ANIMATION ── */
+function animateCounter(el, target, duration) {
+  const start = performance.now();
+  function step(now) {
+    const p = Math.min((now - start) / duration, 1);
+    const ease = 1 - Math.pow(1 - p, 4);
+    el.textContent = Math.floor(ease * target);
+    if (p < 1) requestAnimationFrame(step);
+    else el.textContent = target;
+  }
+  requestAnimationFrame(step);
+}
+
+window.addEventListener('DOMContentLoaded', () => {
+  animateCounter(document.getElementById('counter-commits'), 347,  2000);
+  animateCounter(document.getElementById('counter-repos'),   18,   1500);
+  animateCounter(document.getElementById('counter-stars'),   42,   1800);
+  animateCounter(document.getElementById('counter-leet'),    215,  2200);
+});
+
+/* ── SKILL BARS ── */
+const skills = [
+  { name: 'Python',      pct: 92, cls: 'green'  },
+  { name: 'Java',        pct: 85, cls: 'purple' },
+  { name: 'Machine ML',  pct: 80, cls: 'purple' },
+  { name: 'JavaScript',  pct: 75, cls: 'cyan'   },
+  { name: 'Docker/K8s',  pct: 70, cls: 'cyan'   },
+  { name: 'AWS Cloud',   pct: 68, cls: 'green'  },
+];
+
+const container = document.getElementById('skills-container');
+skills.forEach(s => {
+  const row = document.createElement('div');
+  row.className = 'skill-row';
+  row.innerHTML = `
+    <div class="skill-name">${s.name}</div>
+    <div class="skill-bar-bg">
+      <div class="skill-bar-fill ${s.cls}" data-pct="${s.pct}"></div>
+    </div>
+    <div class="skill-pct">${s.pct}%</div>`;
+  container.appendChild(row);
+});
+
+// Animate bars on load
+setTimeout(() => {
+  document.querySelectorAll('.skill-bar-fill').forEach(bar => {
+    bar.style.width = bar.dataset.pct + '%';
+  });
+}, 400);
+</script>
+</body>
+</html>
