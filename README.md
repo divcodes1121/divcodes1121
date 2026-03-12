@@ -44,11 +44,17 @@
 
 ---
 
-#  Cursed Energy Stats
+# 🐍 Cursed Energy Consumption
+
 <p align="center">
-  <a href="https://divcodes1121.github.io/divcodes1121/matrix-stats.html">
-    <img src="https://readme-typing-svg.herokuapp.com/?lines=Click+to+Enter+the+Matrix...&center=true&color=8A2BE2&width=400"/>
-  </a>
+<picture>
+  <source media="(prefers-color-scheme: dark)"
+    srcset="https://raw.githubusercontent.com/divcodes1121/divcodes1121/output/github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)"
+    srcset="https://raw.githubusercontent.com/divcodes1121/divcodes1121/output/github-snake.svg" />
+  <img alt="github-snake"
+    src="https://raw.githubusercontent.com/divcodes1121/divcodes1121/output/github-snake.svg" />
+</picture>
 </p>
 
 ---
