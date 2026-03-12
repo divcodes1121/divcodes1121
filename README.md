@@ -23,19 +23,7 @@
 # ⚔️ Developer Arsenal
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=python,java,cpp,javascript,php,bash"/>
-</p>
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=react,html,css,django,flask,nodejs,express"/>
-</p>
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=postgres,mysql,sqlite,mongodb"/>
-</p>
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=tensorflow,sklearn,pandas,numpy"/>
-</p>
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=aws,azure,docker,kubernetes,git,linux"/>
+  <img src="https://skillicons.dev/icons?i=python,java,cpp,javascript,php,bash,react,html,css,django,flask,nodejs,express,postgres,mysql,sqlite,mongodb,tensorflow,aws,azure,docker,kubernetes,git,linux&perline=50"/>
 </p>
 
 ---
