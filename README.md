@@ -29,13 +29,7 @@
 # ⚔️ Developer Arsenal
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=python,java,cpp,javascript,php,bash&perline=6"/>
-  <br/><br/>
-  <img src="https://skillicons.dev/icons?i=react,html,css,django,flask,nodejs,express&perline=7"/>
-  <br/><br/>
-  <img src="https://skillicons.dev/icons?i=postgres,mysql,sqlite,mongodb,tensorflow&perline=5"/>
-  <br/><br/>
-  <img src="https://skillicons.dev/icons?i=aws,azure,docker,kubernetes,git,linux&perline=6"/>
+  <img src="https://skillicons.dev/icons?i=python,java,cpp,javascript,php,bash,react,html,css,django,flask,nodejs,express,postgres,mysql,sqlite,mongodb,tensorflow,aws,azure,docker,kubernetes,git,linux&perline=24"/>
 </p>
 
 ---
@@ -47,7 +41,7 @@
 <!-- ═══════════════════════════════════════════ -->
 
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=divcodes1121&theme=tokyonight&no-frame=true&no-bg=true&margin-w=6&column=7"/>
+  <img src="https://github-profile-trophy.vercel.app/?username=divcodes1121&theme=tokyonight&no-frame=true&no-bg=true&margin-w=8&row=1"/>
 </p>
 
 <br/>
@@ -57,9 +51,9 @@
 <!-- ═══════════════════════════════════════════ -->
 
 <p align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=divcodes1121&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true&rank_icon=github&show=reviews,discussions_started"/>
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=divcodes1121&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true"/>
   &nbsp;&nbsp;
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=divcodes1121&layout=compact&theme=tokyonight&hide_border=true&langs_count=8&card_width=320"/>
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=divcodes1121&layout=compact&theme=tokyonight&hide_border=true&langs_count=8"/>
 </p>
 
 <br/>
