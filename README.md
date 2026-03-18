@@ -37,11 +37,20 @@
 # 📊 Cursed Energy Stats
 
 <!-- ═══════════════════════════════════════════ -->
-<!--           TROPHIES - DOMAIN AWARDS          -->
+<!--           DOMAIN AWARDS — TROPHIES          -->
 <!-- ═══════════════════════════════════════════ -->
 
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=divcodes1121&theme=tokyonight&no-frame=true&no-bg=true&margin-w=8&row=1"/>
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=divcodes1121&theme=tokyonight"/>
+</p>
+<p align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=divcodes1121&theme=tokyonight"/>
+  &nbsp;
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=divcodes1121&theme=tokyonight"/>
+  &nbsp;
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=divcodes1121&theme=tokyonight"/>
+  &nbsp;
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=divcodes1121&theme=tokyonight&utcOffset=5.5"/>
 </p>
 
 <br/>
