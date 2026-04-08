@@ -154,13 +154,9 @@
 # 👀 Cursed Energy Observers
 
 <p align="center">
-  <img src="https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif" width="180"/>
+  <img src="https://raw.githubusercontent.com/divcodes1121/divcodes1121/output/anime-counter.svg" />
 </p>
 
 <p align="center">
-  <img src="https://count.getloli.com/get/@divcodes1121?theme=gelbooru&scale=2&padding=10" />
-</p>
-
-<p align="center">
-  <i>⚡ Every visitor fuels the cursed energy ⚡</i>
+  <i>⚡ A living system powered by visitors ⚡</i>
 </p>
