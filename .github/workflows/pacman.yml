@@ -13,19 +13,28 @@ jobs:
 
     steps:
       # ✅ Checkout repo
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v3
 
-      # ✅ Generate pacman files into dist/
-      - name: Generate Pacman
+      # ✅ Generate Pacman (correct output handling)
+      - name: Generate Pacman Graph
         uses: abozanona/pacman-contribution-graph@main
         with:
           github_user_name: divcodes1121
 
-      # 🔥 IMPORTANT FIX HERE
+      # 🔥 DEBUG (you can remove later)
+      - name: Check generated files
+        run: |
+          echo "Listing root:"
+          ls -la
+          echo "Listing dist:"
+          ls -la dist || echo "dist missing"
+
+      # ✅ Deploy (FORCE overwrite output branch)
       - name: Deploy to output branch
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
           publish_branch: output
+          force_orphan: true
