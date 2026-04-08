@@ -72,7 +72,7 @@
 
 ### 🟡 Energy Consumption (Pacman Mode)
 <p align="center">
-  <img src="https://github.com/abozanona/pacman-contribution-graph/raw/master/pacman.svg" />
+  <img src="https://raw.githubusercontent.com/abozanona/pacman-contribution-graph/master/pacman.svg" />
 </p>
 
 ---
