@@ -4,9 +4,6 @@ on:
   schedule:
     - cron: "0 0 * * *"
   workflow_dispatch:
-  push:
-    branches:
-      - main
 
 jobs:
   generate:
@@ -15,21 +12,20 @@ jobs:
       contents: write
 
     steps:
-      # ✅ IMPORTANT (missing in many setups)
-      - name: Checkout repository
+      # ✅ Checkout repo
+      - name: Checkout
         uses: actions/checkout@v3
 
-      # ✅ Generate Pacman
-      - name: Generate Pacman SVG
+      # ✅ Generate pacman files into dist/
+      - name: Generate Pacman
         uses: abozanona/pacman-contribution-graph@main
         with:
           github_user_name: divcodes1121
 
-      # ✅ Deploy to output branch
-      - name: Push to output branch
-        uses: crazy-max/ghaction-github-pages@v3
+      # 🔥 IMPORTANT FIX HERE
+      - name: Deploy to output branch
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          target_branch: output
-          build_dir: .
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          publish_branch: output
