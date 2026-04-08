@@ -19,10 +19,10 @@
 
 > *"I don't need a reason to save people."* — and I don't need a reason to build great things.
 
-🎓 CSE (AI & ML) @ **VIT-AP University**
-⚡ Passionate about **AI Systems, Backend Engineering & Cloud**
-🧠 Strong in **Python, Java, ML, Full-Stack Development**
-🚀 Goal: Build scalable intelligent systems that reshape the world
+🎓 CSE (AI & ML) @ **VIT-AP University**  
+⚡ Passionate about **AI Systems, Backend Engineering & Cloud**  
+🧠 Strong in **Python, Java, ML, Full-Stack Development**  
+🚀 Goal: Build scalable intelligent systems that reshape the world  
 
 ---
 
@@ -36,13 +36,10 @@
 
 # 📊 Cursed Energy Stats
 
-<!-- ═══════════════════════════════════════════ -->
-<!--           DOMAIN AWARDS — TROPHIES          -->
-<!-- ═══════════════════════════════════════════ -->
-
 <p align="center">
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=divcodes1121&theme=tokyonight"/>
 </p>
+
 <p align="center">
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=divcodes1121&theme=tokyonight"/>
   &nbsp;
@@ -53,46 +50,15 @@
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=divcodes1121&theme=tokyonight&utcOffset=5.5"/>
 </p>
 
-<br/>
-
-<!-- ═══════════════════════════════════════════ -->
-<!--         STATS + LANGUAGES SIDE BY SIDE      -->
-<!-- ═══════════════════════════════════════════ -->
-
-<p align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=divcodes1121&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true"/>
-  &nbsp;&nbsp;
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=divcodes1121&layout=compact&theme=tokyonight&hide_border=true&langs_count=8"/>
-</p>
-
-<br/>
-
-<!-- ═══════════════════════════════════════════ -->
-<!--              STREAK STATS                   -->
-<!-- ═══════════════════════════════════════════ -->
-
-<p align="center">
-  <img src="https://streak-stats.demolab.com/?user=divcodes1121&theme=tokyonight&hide_border=true&background=0D1117&ring=8A2BE2&fire=FF6B6B&currStreakLabel=8A2BE2&sideLabels=8A2BE2&dates=888888"/>
-</p>
-
-<br/>
-
-<!-- ═══════════════════════════════════════════ -->
-<!--          WAKATIME / CODING TIME             -->
-<!-- ═══════════════════════════════════════════ -->
-
-> 💡 *Connect your [WakaTime](https://wakatime.com) account to unlock the coding time card below*
-
-<!--
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/wakatime?username=divcodes1121&theme=tokyonight&hide_border=true&layout=compact"/>
-</p>
--->
-
 ---
 
-# 🐍 Cursed Energy Consumption
+# 🐍 + 🟡 Cursed Energy System
 
+<p align="center">
+  <i>Energy Flow (Snake) + Energy Consumption (Pacman)</i>
+</p>
+
+### 🐍 Energy Flow
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)"
@@ -102,6 +68,11 @@
     <img alt="github-snake"
       src="https://raw.githubusercontent.com/divcodes1121/divcodes1121/output/github-snake.svg"/>
   </picture>
+</p>
+
+### 🟡 Energy Consumption (Pacman Mode)
+<p align="center">
+  <img src="https://github.com/abozanona/pacman-contribution-graph/raw/master/pacman.svg" />
 </p>
 
 ---
@@ -129,54 +100,30 @@
     <td width="50%">
       <h3>🚇 Metro Ticket Booking System</h3>
       <p>Java + Spring Boot backend for metro ticket reservations with real-time seat management</p>
-      <p>
-        <img src="https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white"/>
-        <img src="https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat-square&logo=spring&logoColor=white"/>
-      </p>
     </td>
     <td width="50%">
       <h3>🤖 AI Support Ticket System</h3>
       <p>LLM-powered pipeline to classify, prioritize and route support tickets automatically</p>
-      <p>
-        <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/>
-        <img src="https://img.shields.io/badge/OpenAI-412991?style=flat-square&logo=openai&logoColor=white"/>
-      </p>
     </td>
   </tr>
   <tr>
     <td width="50%">
       <h3>🏡 Property Rental Platform</h3>
-      <p>Full-stack MERN property listing and booking platform with auth and real-time updates</p>
-      <p>
-        <img src="https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white"/>
-        <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black"/>
-        <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white"/>
-      </p>
+      <p>Full-stack MERN platform with auth and real-time updates</p>
     </td>
     <td width="50%">
       <h3>📈 BTC Price Tracker</h3>
-      <p>Dockerized backend with JWT authentication, live crypto price tracking and alerts</p>
-      <p>
-        <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white"/>
-        <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/>
-      </p>
+      <p>Dockerized backend with JWT authentication and live alerts</p>
     </td>
   </tr>
   <tr>
     <td width="50%">
       <h3>🧠 House Price Prediction</h3>
-      <p>ML regression model trained on real estate data with feature engineering and deployment</p>
-      <p>
-        <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white"/>
-        <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white"/>
-      </p>
+      <p>ML regression model with feature engineering & deployment</p>
     </td>
     <td width="50%">
       <h3>💡 More coming soon...</h3>
-      <p>Always building. Always expanding. The domain never closes.</p>
-      <p>
-        <img src="https://img.shields.io/badge/Status-In_Progress-8A2BE2?style=flat-square"/>
-      </p>
+      <p>The domain never closes.</p>
     </td>
   </tr>
 </table>
@@ -192,10 +139,6 @@
   &nbsp;
   <a href="https://leetcode.com/u/Div_Codes1121/">
     <img src="https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black"/>
-  </a>
-  &nbsp;
-  <a href="mailto:your-email@example.com">
-    <img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/>
   </a>
 </p>
 
