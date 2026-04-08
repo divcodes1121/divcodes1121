@@ -2,7 +2,7 @@ name: Generate Pacman Contribution Graph
 
 on:
   schedule:
-    - cron: "0 0 * * *"
+    - cron: "10 0 * * *"   # runs 10 min after snake (avoids conflict)
   workflow_dispatch:
 
 jobs:
@@ -16,13 +16,13 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      # ✅ Generate Pacman (correct output handling)
+      # ✅ Generate Pacman
       - name: Generate Pacman Graph
         uses: abozanona/pacman-contribution-graph@main
         with:
           github_user_name: divcodes1121
 
-      # 🔥 DEBUG (you can remove later)
+      # 🔍 Optional debug (safe to keep/remove)
       - name: Check generated files
         run: |
           echo "Listing root:"
@@ -30,11 +30,11 @@ jobs:
           echo "Listing dist:"
           ls -la dist || echo "dist missing"
 
-      # ✅ Deploy (FORCE overwrite output branch)
+      # ✅ Deploy WITHOUT deleting snake files
       - name: Deploy to output branch
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
           publish_branch: output
-          force_orphan: true
+          keep_files: true
