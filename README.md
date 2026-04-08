@@ -151,11 +151,17 @@
 
 ---
 
-# 👀 Profile Visitors
+# 👀 Cursed Energy Observers
 
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=divcodes1121&color=blueviolet&style=for-the-badge&label=CURSED+ENERGY+OBSERVERS"/>
+  <img src="https://count.getloli.com/get/@divcodes1121?theme=rule34" />
 </p>
+
+<p align="center">
+  <i>⚡ Every visitor increases the cursed energy ⚡</i>
+</p>
+
+---
 
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0D0D0D,50:8A2BE2,100:4B0082&height=80&section=footer"/>
