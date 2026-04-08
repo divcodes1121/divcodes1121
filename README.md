@@ -154,19 +154,13 @@
 # 👀 Cursed Energy Observers
 
 <p align="center">
+  <img src="https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif" width="180"/>
+</p>
+
+<p align="center">
   <img src="https://count.getloli.com/get/@divcodes1121?theme=gelbooru&scale=2&padding=10" />
 </p>
 
 <p align="center">
-  <i>⚡ Every visitor increases the cursed energy ⚡</i>
-</p>
-
----
-
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0D0D0D,50:8A2BE2,100:4B0082&height=80&section=footer"/>
-</p>
-
-<p align="center">
-  <i>⚡ "Throughout Heaven and Earth, I alone am the coding one." ⚡</i>
+  <i>⚡ Every visitor fuels the cursed energy ⚡</i>
 </p>
