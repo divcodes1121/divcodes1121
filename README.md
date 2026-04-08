@@ -17,12 +17,12 @@
 
 # 🌀 About Me
 
-> *"I don't need a reason to save people."* — and I don't need a reason to build great things.
+> *"I don't need a reason to save people."*
 
 🎓 CSE (AI & ML) @ **VIT-AP University**  
-⚡ Passionate about **AI Systems, Backend Engineering & Cloud**  
-🧠 Strong in **Python, Java, ML, Full-Stack Development**  
-🚀 Goal: Build scalable intelligent systems that reshape the world  
+⚡ AI Systems | Backend | Cloud  
+🧠 Python, Java, ML, Full Stack  
+🚀 Building scalable intelligent systems  
 
 ---
 
@@ -42,12 +42,7 @@
 
 <p align="center">
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=divcodes1121&theme=tokyonight"/>
-  &nbsp;
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=divcodes1121&theme=tokyonight"/>
-  &nbsp;
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=divcodes1121&theme=tokyonight"/>
-  &nbsp;
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=divcodes1121&theme=tokyonight&utcOffset=5.5"/>
 </p>
 
 ---
@@ -60,100 +55,60 @@
 
 ### 🐍 Energy Flow
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)"
-      srcset="https://raw.githubusercontent.com/divcodes1121/divcodes1121/output/github-snake-dark.svg"/>
-    <source media="(prefers-color-scheme: light)"
-      srcset="https://raw.githubusercontent.com/divcodes1121/divcodes1121/output/github-snake.svg"/>
-    <img alt="github-snake"
-      src="https://raw.githubusercontent.com/divcodes1121/divcodes1121/output/github-snake.svg"/>
-  </picture>
+  <img src="https://raw.githubusercontent.com/divcodes1121/divcodes1121/output/github-snake.svg"/>
 </p>
 
 ### 🟡 Energy Consumption (Pacman Mode)
+
 <p align="center">
-  <img src="https://raw.githubusercontent.com/abozanona/pacman-contribution-graph/master/pacman.svg" />
+  <img src="https://ghchart.rshah.org/8A2BE2/divcodes1121" />
 </p>
 
 ---
 
-# 📈 Cursed Technique — Activity Graph
+# 📈 Activity Graph
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=divcodes1121&theme=tokyo-night&hide_border=true&bg_color=0D1117&color=8A2BE2&line=8A2BE2&point=FF6B6B&area=true&area_color=8A2BE2"/>
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=divcodes1121&theme=tokyo-night&hide_border=true"/>
 </p>
 
 ---
 
-# 🧠 LeetCode Stats
+# 🧠 LeetCode
 
 <p align="center">
-  <img src="https://leetcard.jacoblin.cool/Div_Codes1121?theme=dark&font=baloo&ext=heatmap"/>
+  <img src="https://leetcard.jacoblin.cool/Div_Codes1121?theme=dark&ext=heatmap"/>
 </p>
 
 ---
 
-# 🔥 Cursed Techniques (Projects)
+# 🔥 Projects
 
-<table align="center">
-  <tr>
-    <td width="50%">
-      <h3>🚇 Metro Ticket Booking System</h3>
-      <p>Java + Spring Boot backend for metro ticket reservations with real-time seat management</p>
-    </td>
-    <td width="50%">
-      <h3>🤖 AI Support Ticket System</h3>
-      <p>LLM-powered pipeline to classify, prioritize and route support tickets automatically</p>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%">
-      <h3>🏡 Property Rental Platform</h3>
-      <p>Full-stack MERN platform with auth and real-time updates</p>
-    </td>
-    <td width="50%">
-      <h3>📈 BTC Price Tracker</h3>
-      <p>Dockerized backend with JWT authentication and live alerts</p>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%">
-      <h3>🧠 House Price Prediction</h3>
-      <p>ML regression model with feature engineering & deployment</p>
-    </td>
-    <td width="50%">
-      <h3>💡 More coming soon...</h3>
-      <p>The domain never closes.</p>
-    </td>
-  </tr>
-</table>
+- 🚇 Metro Ticket Booking System  
+- 🤖 AI Support Ticket System  
+- 🏡 Property Rental Platform  
+- 📈 BTC Price Tracker  
+- 🧠 House Price Prediction  
 
 ---
 
-# 🌐 Connect With Me
+# 🌐 Connect
 
 <p align="center">
   <a href="https://www.linkedin.com/in/divyanshu-singh1121/">
-    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin"/>
   </a>
-  &nbsp;
   <a href="https://leetcode.com/u/Div_Codes1121/">
-    <img src="https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black"/>
+    <img src="https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode"/>
   </a>
 </p>
 
 ---
 
-# 👀 Profile Visitors
-
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=divcodes1121&color=blueviolet&style=for-the-badge&label=CURSED+ENERGY+OBSERVERS"/>
+  <img src="https://komarev.com/ghpvc/?username=divcodes1121&color=blueviolet&style=for-the-badge"/>
 </p>
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0D0D0D,50:8A2BE2,100:4B0082&height=80&section=footer"/>
-</p>
-
-<p align="center">
-  <i>⚡ "Throughout Heaven and Earth, I alone am the coding one." ⚡</i>
+  ⚡ "Throughout Heaven and Earth, I alone am the coding one."
 </p>
