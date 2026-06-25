@@ -1,4 +1,4 @@
-<h1 align="center">⚡ Divyanshu Singh ⚡</h1>
+<h1 align="center"> Divyanshu Singh </h1>
 <h3 align="center">― Domain Expansion: Code Infinity ―</h3>
 
 <p align="center">
@@ -15,14 +15,14 @@
 
 ---
 
-# 🌀 About Me
+# About Me
 
 > *"I don't need a reason to save people."* — and I don't need a reason to build great things.
 
-🎓 CSE (AI & ML) @ **VIT-AP University**  
-⚡ Passionate about **AI Systems, Backend Engineering & Cloud**  
-🧠 Strong in **Python, Java, ML, Full-Stack Development**  
-🚀 Goal: Build scalable intelligent systems that reshape the world  
+ CSE (AI & ML) @ **VIT-AP University**  
+ Passionate about **AI Systems, Backend Engineering & Cloud**  
+ Strong in **Python, Java, ML, Full-Stack Development**  
+ Goal: Build scalable intelligent systems that reshape the world  
 
 ---
 
@@ -52,13 +52,13 @@
 
 ---
 
-# 🐍 + 🟡 Cursed Energy System
+#  Cursed Energy System
 
 <p align="center">
   <i>Energy Flow (Snake) + Energy Consumption (Pacman)</i>
 </p>
 
-### 🐍 Energy Flow
+###  Energy Flow
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)"
@@ -70,7 +70,7 @@
   </picture>
 </p>
 
-### 🟡 Energy Consumption (Pacman Mode)
+### Energy Consumption (Pacman Mode)
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" 
@@ -84,7 +84,7 @@
 
 ---
 
-# 📈 Cursed Technique — Activity Graph
+# Cursed Technique — Activity Graph
 
 <p align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=divcodes1121&theme=tokyo-night&hide_border=true&bg_color=0D1117&color=8A2BE2&line=8A2BE2&point=FF6B6B&area=true&area_color=8A2BE2"/>
@@ -92,7 +92,7 @@
 
 ---
 
-# 🧠 LeetCode Stats
+# LeetCode Stats
 
 <p align="center">
   <img src="https://leetcard.jacoblin.cool/Div_Codes1121?theme=dark&font=baloo&ext=heatmap"/>
@@ -100,7 +100,7 @@
 
 ---
 
-# 🔥 Cursed Techniques (Projects)
+# Cursed Techniques (Projects)
 
 <table align="center">
   <tr>
@@ -151,7 +151,7 @@
 
 ---
 
-# 👀 Cursed Energy Observers
+#  Cursed Energy Observers
 
 <p align="center">
   <img src="https://count.getloli.com/get/@divcodes1121?theme=gelbooru&scale=2&padding=10" />
