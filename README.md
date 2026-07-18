@@ -335,7 +335,7 @@ Secure authentication, live listing updates, and a complete rental lifecycle fro
 
 `◆ Auth & Sessions` · `◆ Real-Time Updates` · `◆ Listing Engine` · `◆ Full-Stack MERN`
 
-<a href="https://github.com/divcodes1121/Property-Rental-Platform-Development">
+<a href="https://github.com/divcodes1121/Property-Rental-Platform-Development-">
   <img src="https://img.shields.io/badge/VIEW%20REPOSITORY-0D1117?style=for-the-badge&logo=github&logoColor=white&labelColor=8A2BE2"/>
 </a>
 &nbsp;
