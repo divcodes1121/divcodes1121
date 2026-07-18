@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 880 410" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="bgrid" width="22" height="22" patternUnits="userSpaceOnUse">
+      <path d="M 22 0 L 0 0 0 22" fill="none" stroke="#161B22" stroke-width="1"/>
+    </pattern>
+    <style>
+      .mono { font-family: Consolas, 'SF Mono', Menlo, monospace; }
+      .box { fill: none; stroke: #00D9FF; stroke-opacity: .55; stroke-width: 1.4;
+             stroke-dasharray: 600; stroke-dashoffset: 600; animation: draw 22s ease-out infinite; }
+      .b1 { animation-delay: .2s; } .b2 { animation-delay: .7s; } .b3 { animation-delay: 1.3s; }
+      .b4 { animation-delay: 1.6s; } .b5 { animation-delay: 1.9s; } .b6 { animation-delay: 2.4s; }
+      @keyframes draw { 0% { stroke-dashoffset: 600; } 12% { stroke-dashoffset: 0; } 93% { stroke-dashoffset: 0; opacity: 1; } 97%,100% { opacity: 0; } }
+      .wire { fill: none; stroke: #30363D; stroke-width: 1.2; stroke-dasharray: 200; stroke-dashoffset: 200;
+              animation: wire 22s ease-out infinite; animation-delay: 2.8s; }
+      @keyframes wire { 0% { stroke-dashoffset: 200; } 6% { stroke-dashoffset: 0; } 93% { stroke-dashoffset: 0; opacity: 1; } 97%,100% { opacity: 0; } }
+      .lbl { opacity: 0; animation: lbl 22s ease infinite; }
+      .l1 { animation-delay: 1s; } .l2 { animation-delay: 1.5s; } .l3 { animation-delay: 2s; }
+      .l4 { animation-delay: 2.3s; } .l5 { animation-delay: 2.6s; } .l6 { animation-delay: 3s; } .l7 { animation-delay: 3.4s; }
+      @keyframes lbl { 0% { opacity: 0; } 3% { opacity: 1; } 93% { opacity: 1; } 97%,100% { opacity: 0; } }
+      .packet { fill: none; stroke: #8A2BE2; stroke-width: 2; stroke-linecap: round;
+                stroke-dasharray: 26 674; animation: packet 5.5s linear infinite; animation-delay: 4s; }
+      @keyframes packet { from { stroke-dashoffset: 700; } to { stroke-dashoffset: 0; } }
+      .cross { stroke: #30363D; stroke-width: 1; }
+    </style>
+  </defs>
+
+  <rect width="880" height="410" fill="#0D1117" rx="14" stroke="#21262D" stroke-width="1.5"/>
+  <rect x="1" y="1" width="878" height="408" rx="14" fill="url(#bgrid)"/>
+
+  <!-- register marks -->
+  <g class="cross">
+    <path d="M 30 24 v12 M 24 30 h12"/><path d="M 850 24 v12 M 844 30 h12"/>
+    <path d="M 30 374 v12 M 24 380 h12"/><path d="M 850 374 v12 M 844 380 h12"/>
+  </g>
+
+  <!-- component boxes -->
+  <rect class="box b1" x="60"  y="160" width="138" height="64" rx="3"/>
+  <rect class="box b2" x="262" y="150" width="152" height="84" rx="3"/>
+  <rect class="box b3" x="490" y="66"  width="132" height="52" rx="3"/>
+  <rect class="box b4" x="490" y="166" width="132" height="52" rx="3"/>
+  <rect class="box b5" x="490" y="266" width="132" height="52" rx="3"/>
+  <rect class="box b6" x="688" y="160" width="132" height="64" rx="3"/>
+
+  <!-- wires -->
+  <path class="wire" d="M 198 192 H 262"/>
+  <path class="wire" d="M 414 192 H 452 V 92  H 490"/>
+  <path class="wire" d="M 452 192 H 490"/>
+  <path class="wire" d="M 414 192 H 452 V 292 H 490"/>
+  <path class="wire" d="M 622 92  H 656 V 192 H 688"/>
+  <path class="wire" d="M 622 192 H 688"/>
+  <path class="wire" d="M 622 292 H 656 V 192"/>
+  <path class="wire" d="M 820 192 H 852"/>
+
+  <!-- data packet along spine -->
+  <path class="packet" d="M 60 192 H 198 M 198 192 H 262 M 414 192 H 490 M 622 192 H 688 M 820 192 H 852" pathLength="700"/>
+
+  <!-- labels -->
+  <g class="mono">
+    <text class="lbl l1" x="129" y="188" text-anchor="middle" font-size="13" fill="#FFFFFF">recipes/*.yml</text>
+    <text class="lbl l1" x="129" y="206" text-anchor="middle" font-size="10" fill="#7D8590">declarative input</text>
+    <text class="lbl l2" x="338" y="186" text-anchor="middle" font-size="13" fill="#FFFFFF">workflow engine</text>
+    <text class="lbl l2" x="338" y="204" text-anchor="middle" font-size="10" fill="#7D8590">python · modular backend</text>
+    <text class="lbl l3" x="556" y="88"  text-anchor="middle" font-size="12" fill="#FFFFFF">tts worker</text>
+    <text class="lbl l3" x="556" y="104" text-anchor="middle" font-size="10" fill="#7D8590">voiceover synth</text>
+    <text class="lbl l4" x="556" y="188" text-anchor="middle" font-size="12" fill="#FFFFFF">vision unit</text>
+    <text class="lbl l4" x="556" y="204" text-anchor="middle" font-size="10" fill="#7D8590">rembg · opencv</text>
+    <text class="lbl l5" x="556" y="288" text-anchor="middle" font-size="12" fill="#FFFFFF">asset manager</text>
+    <text class="lbl l5" x="556" y="304" text-anchor="middle" font-size="10" fill="#7D8590">google api</text>
+    <text class="lbl l6" x="754" y="186" text-anchor="middle" font-size="13" fill="#FFFFFF">ffmpeg mux</text>
+    <text class="lbl l6" x="754" y="204" text-anchor="middle" font-size="10" fill="#7D8590">encode · export</text>
+    <text class="lbl l7" x="852" y="180" text-anchor="end" font-size="10" fill="#7D8590">▸ out</text>
+  </g>
+
+  <!-- title block -->
+  <path d="M 30 352 H 850" stroke="#21262D" stroke-width="1"/>
+  <g class="mono" font-size="10">
+    <text x="30" y="374" fill="#A1A1AA" letter-spacing="2">FIG. 01 — AUTOMATED VIDEO ENGINE</text>
+    <text x="30" y="390" fill="#30363D">drawn from repository contents · divcodes1121/Automation_Workflow</text>
+    <text x="850" y="374" text-anchor="end" fill="#A1A1AA">rev 4.1</text>
+    <text x="850" y="390" text-anchor="end" fill="#30363D">scale 1:∞</text>
+  </g>
+</svg>

@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg viewBox="0 0 880 360" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 880 404" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <style>
       .mono { font-family: Consolas, 'SF Mono', Menlo, monospace; font-size: 13px; }
-      .cmd { opacity: 0; animation: show 24s linear infinite; }
-      .out { opacity: 0; animation: show 24s linear infinite; }
-      .c1 { animation-delay: .4s; }  .o1 { animation-delay: 1.5s; }
-      .c2 { animation-delay: 2.8s; } .o2 { animation-delay: 3.9s; }
-      .c3 { animation-delay: 5.2s; } .o3 { animation-delay: 6.3s; }
-      .c4 { animation-delay: 7.6s; } .o4 { animation-delay: 8.7s; }
-      .c5 { animation-delay: 10s; }
-      @keyframes show {
+      .ln { opacity: 0; animation: ln 30s linear infinite; }
+      .c1 { animation-delay: .4s; }  .o1a { animation-delay: 1.4s; } .o1b { animation-delay: 2s; }
+      .c2 { animation-delay: 3.4s; } .o2a { animation-delay: 4.4s; } .o2b { animation-delay: 5.2s; }
+      .c3 { animation-delay: 6.6s; } .o3 { animation-delay: 7.6s; }
+      .c4 { animation-delay: 9s; }   .o4 { animation-delay: 9.8s; }
+      .c5 { animation-delay: 11.2s; } .o5 { animation-delay: 12.4s; }
+      .c6 { animation-delay: 13.8s; }
+      @keyframes ln {
         0% { opacity: 0; transform: translateY(3px); }
-        1.2% { opacity: 1; transform: translateY(0); }
-        91% { opacity: 1; }
+        1% { opacity: 1; transform: translateY(0); }
+        92% { opacity: 1; }
         96%, 100% { opacity: 0; }
       }
       .caret { animation: blink 1s steps(1) infinite; }
@@ -21,28 +21,33 @@
     </style>
   </defs>
 
-  <rect x="1" y="1" width="878" height="358" rx="14" fill="#0D1117" stroke="#21262D" stroke-width="1.5"/>
+  <rect x="1" y="1" width="878" height="402" rx="14" fill="#0D1117" stroke="#21262D" stroke-width="1.5"/>
   <rect x="1" y="1" width="878" height="40" rx="14" fill="#161B22"/>
   <rect x="1" y="27" width="878" height="14" fill="#161B22"/>
   <circle cx="28" cy="21" r="5.5" fill="#30363D"/>
   <circle cx="48" cy="21" r="5.5" fill="#30363D"/>
   <circle cx="68" cy="21" r="5.5" fill="#00D9FF" opacity="0.8"/>
-  <text x="440" y="25" text-anchor="middle" class="mono" fill="#7D8590" letter-spacing="2">divyanshu@divos: ~</text>
+  <text x="440" y="25" text-anchor="middle" class="mono" fill="#7D8590" letter-spacing="2">divyanshu@divos: ~ — some commands are undocumented</text>
   <rect x="1" y="41" width="878" height="1" fill="#21262D"/>
 
   <g class="mono">
-    <text class="cmd c1" x="32" y="74"><tspan fill="#00D9FF">divyanshu@divos</tspan><tspan fill="#7D8590">:</tspan><tspan fill="#8A2BE2">~</tspan><tspan fill="#7D8590">$</tspan><tspan fill="#E6EDF3" dx="8">whoami</tspan></text>
-    <text class="out o1" x="32" y="96" fill="#7D8590">ai &amp; backend engineer — cse (ai &amp; ml) @ vit-ap university</text>
+    <text class="ln c1" x="32" y="72"><tspan fill="#00D9FF">❯</tspan><tspan fill="#E6EDF3" dx="8">help</tspan></text>
+    <text class="ln o1a" x="32" y="96" fill="#A1A1AA">about · projects · skills · resume · contact · github</text>
+    <text class="ln o1b" x="32" y="118" fill="#7D8590">...plus a few undocumented ones. try your luck.</text>
 
-    <text class="cmd c2" x="32" y="130"><tspan fill="#00D9FF">divyanshu@divos</tspan><tspan fill="#7D8590">:</tspan><tspan fill="#8A2BE2">~</tspan><tspan fill="#7D8590">$</tspan><tspan fill="#E6EDF3" dx="8">skills --top</tspan></text>
-    <text class="out o2" x="32" y="152" fill="#7D8590">python · java · spring boot · tensorflow · docker · aws</text>
+    <text class="ln c2" x="32" y="152"><tspan fill="#00D9FF">❯</tspan><tspan fill="#E6EDF3" dx="8">sudo become_10x_engineer</tspan></text>
+    <text class="ln o2a" x="32" y="176" fill="#A1A1AA">[sudo] password for divyanshu: ••••••••</text>
+    <text class="ln o2b" x="32" y="198"><tspan fill="#F85149">access denied.</tspan><tspan fill="#7D8590" dx="8">nice try ;)</tspan></text>
 
-    <text class="cmd c3" x="32" y="186"><tspan fill="#00D9FF">divyanshu@divos</tspan><tspan fill="#7D8590">:</tspan><tspan fill="#8A2BE2">~</tspan><tspan fill="#7D8590">$</tspan><tspan fill="#E6EDF3" dx="8">cat mission.txt</tspan></text>
-    <text class="out o3" x="32" y="208" fill="#7D8590">build intelligent systems that survive contact with production.</text>
+    <text class="ln c3" x="32" y="232"><tspan fill="#00D9FF">❯</tspan><tspan fill="#E6EDF3" dx="8">coffee</tspan></text>
+    <text class="ln o3" x="32" y="256"><tspan fill="#A1A1AA">brewing</tspan><tspan fill="#8A2BE2" dx="8">██████████</tspan><tspan fill="#A1A1AA" dx="8">done — motivation restored.</tspan></text>
 
-    <text class="cmd c4" x="32" y="242"><tspan fill="#00D9FF">divyanshu@divos</tspan><tspan fill="#7D8590">:</tspan><tspan fill="#8A2BE2">~</tspan><tspan fill="#7D8590">$</tspan><tspan fill="#E6EDF3" dx="8">uptime</tspan></text>
-    <text class="out o4" x="32" y="264" fill="#7D8590">3 yrs in engineering · 30 public repos · shipping daily</text>
+    <text class="ln c4" x="32" y="290"><tspan fill="#00D9FF">❯</tspan><tspan fill="#E6EDF3" dx="8">42</tspan></text>
+    <text class="ln o4" x="32" y="314" fill="#A1A1AA">correct answer. now find the question.</text>
 
-    <text class="cmd c5" x="32" y="306"><tspan fill="#00D9FF">divyanshu@divos</tspan><tspan fill="#7D8590">:</tspan><tspan fill="#8A2BE2">~</tspan><tspan fill="#7D8590">$</tspan><tspan class="caret" fill="#E6EDF3" dx="8">▊</tspan></text>
+    <text class="ln c5" x="32" y="348"><tspan fill="#00D9FF">❯</tspan><tspan fill="#E6EDF3" dx="8">secret</tspan></text>
+    <text class="ln o5" x="32" y="372"><tspan fill="#00D9FF">achievement unlocked</tspan><tspan fill="#A1A1AA" dx="8">— "you looked deeper."</tspan></text>
+
+    <text class="ln c6" x="32" y="396"><tspan fill="#00D9FF">❯</tspan><tspan class="caret" fill="#E6EDF3" dx="8">▊</tspan></text>
   </g>
 </svg>

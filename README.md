@@ -1,5 +1,5 @@
 <!-- ═════════════════════════════════════════════════════════════════
-     divos v4.0 — the operating system of divyanshu singh
+     divos v4.1 — seven moments, one world
      designed & built by hand · github.com/divcodes1121
      ═════════════════════════════════════════════════════════════════ -->
 
@@ -29,7 +29,7 @@
 
 <div align="center">
 
-<samp>every system starts somewhere. this one boots in 0.486 seconds.</samp>
+<img src="https://raw.githubusercontent.com/divcodes1121/divcodes1121/main/assets/palette.svg" width="72%" alt="command palette"/>
 
 </div>
 
@@ -38,14 +38,16 @@
 <img src="https://raw.githubusercontent.com/divcodes1121/divcodes1121/main/assets/divider.svg" width="100%" alt=""/>
 
 <br/>
+
+<samp>overworld · pick a destination</samp>
+
+## The World
+
+<img src="https://raw.githubusercontent.com/divcodes1121/divcodes1121/main/assets/rpg.svg" width="100%" alt="pixel overworld — lab, library, mine, rocket, shop"/>
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/divcodes1121/divcodes1121/main/assets/palette.svg" width="72%" alt="command palette"/>
-
-<br/><br/>
-
-<samp><a href="#projects">projects</a>&nbsp;&nbsp;·&nbsp;&nbsp;<a href="#stack">stack</a>&nbsp;&nbsp;·&nbsp;&nbsp;<a href="#analytics">analytics</a>&nbsp;&nbsp;·&nbsp;&nbsp;<a href="#journey">journey</a>&nbsp;&nbsp;·&nbsp;&nbsp;<a href="#contact">contact</a>&nbsp;&nbsp;·&nbsp;&nbsp;<a href="https://github.com/divcodes1121?tab=repositories">repositories ↗</a></samp>
+<samp>[&nbsp;<a href="#lab">enter lab</a>&nbsp;]&nbsp;&nbsp;[&nbsp;<a href="#analytics">open library</a>&nbsp;]&nbsp;&nbsp;[&nbsp;<a href="#stack">descend mine</a>&nbsp;]&nbsp;&nbsp;[&nbsp;<a href="#projects">board rocket</a>&nbsp;]&nbsp;&nbsp;[&nbsp;<a href="#contact">visit shop</a>&nbsp;]</samp>
 
 </div>
 
@@ -55,19 +57,23 @@
 
 <br/>
 
-<a name="os"></a>
+<a name="lab"></a>
 
-<img src="https://raw.githubusercontent.com/divcodes1121/divcodes1121/main/assets/os.svg" width="100%" alt="developer operating system — live monitor and system info"/>
+<samp>01 · laboratory</samp>
+
+## The Core
+
+Five disciplines feeding one loop. The environment moves; the work stays deliberate.
+
+<br/>
+
+<img src="https://raw.githubusercontent.com/divcodes1121/divcodes1121/main/assets/core.svg" width="100%" alt="ai core — python, machine learning, backend, cloud, systems"/>
 
 <br/><br/>
 
-<img src="https://raw.githubusercontent.com/divcodes1121/divcodes1121/main/assets/terminal.svg" width="100%" alt="interactive terminal session"/>
+<img src="https://raw.githubusercontent.com/divcodes1121/divcodes1121/main/assets/os.svg" width="100%" alt="system monitor and system info"/>
 
-<br/>
-
-<img src="https://raw.githubusercontent.com/divcodes1121/divcodes1121/main/assets/divider.svg" width="100%" alt=""/>
-
-<br/>
+<br/><br/>
 
 <img src="https://raw.githubusercontent.com/divcodes1121/divcodes1121/main/assets/roadmap.svg" width="100%" alt="current build pipeline"/>
 
@@ -77,13 +83,73 @@
 
 <br/>
 
-<a name="stack"></a>
+<a name="projects"></a>
+
+<samp>02 · launch pad</samp>
+
+## Featured Systems
+
+The flagship first — drawn as a blueprint, because that's how it was built.
+
+<br/>
+
+<img src="https://raw.githubusercontent.com/divcodes1121/divcodes1121/main/assets/blueprint.svg" width="100%" alt="blueprint — automated video engine architecture"/>
 
 <div align="center">
 
-<samp>— T E C H N O L O G Y —</samp>
+<a href="https://github.com/divcodes1121/Automation_Workflow"><img src="https://img.shields.io/badge/open%20blueprint%20source%20→-161B22?style=for-the-badge&logo=github&logoColor=white" alt="source"/></a>
 
-<br/><br/><br/>
+</div>
+
+<br/>
+
+### LLM Ticket Triage
+
+**An inbox that reads, prioritizes, and routes itself.** Language-model pipeline for support-ticket classification — intent, sentiment, priority, destination queue.
+
+<samp>javascript · node · llm apis · mongodb&nbsp;&nbsp;—&nbsp;&nbsp;<a href="https://github.com/divcodes1121/LLM-Powered-AI-Support-Ticket-Management-System">source ↗</a></samp>
+
+<br/>
+
+### Ethereum Deposit Tracker
+
+**Monitoring with receipts.** Chain scraper feeding MongoDB and Telegram alerts, instrumented with Prometheus and Grafana — because "it works" and "I can see it working" are different claims.
+
+<samp>typescript · mongodb · prometheus · grafana · docker&nbsp;&nbsp;—&nbsp;&nbsp;<a href="https://github.com/divcodes1121/Eth-deposit-tracker">source ↗</a></samp>
+
+<br/>
+
+### Metro Booking System
+
+**Concurrency you can sit on.** Spring Boot reservations with seat-lock semantics, schedules, and e-ticket delivery under simultaneous load.
+
+<samp>java · spring boot · mysql&nbsp;&nbsp;—&nbsp;&nbsp;<a href="https://github.com/divcodes1121/Metro-Ticket-Booking-System">source ↗</a></samp>
+
+<br/><br/>
+
+<img src="https://raw.githubusercontent.com/divcodes1121/divcodes1121/main/assets/radar.svg" width="100%" alt="repository radar — six contacts on scope"/>
+
+<div align="center">
+
+<samp><a href="https://github.com/divcodes1121?tab=repositories">24 more beyond range ↗</a></samp>
+
+</div>
+
+<br/>
+
+<img src="https://raw.githubusercontent.com/divcodes1121/divcodes1121/main/assets/divider.svg" width="100%" alt=""/>
+
+<br/>
+
+<a name="stack"></a>
+
+<samp>03 · the mine</samp>
+
+## Tools of the Trade
+
+<br/>
+
+<div align="center">
 
 <samp>core languages</samp>
 
@@ -91,15 +157,15 @@
 
 <img src="https://skillicons.dev/icons?i=python,java,cpp,cs,typescript,javascript,kotlin,bash&theme=dark" alt="languages"/>
 
-<br/><br/><br/>
+<br/><br/>
 
-<samp>intelligence layer</samp>&nbsp;&nbsp;&nbsp;&nbsp;<samp>service layer</samp>
+<samp>intelligence</samp>&nbsp;&nbsp;&nbsp;&nbsp;<samp>services</samp>
 
 <br/><br/>
 
 <img src="https://skillicons.dev/icons?i=tensorflow,pytorch,sklearn,opencv&theme=dark" alt="ai and ml"/>&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://skillicons.dev/icons?i=spring,django,flask,nodejs,fastapi&theme=dark" alt="backend"/>
 
-<br/><br/><br/>
+<br/><br/>
 
 <samp>persistence</samp>&nbsp;&nbsp;&nbsp;&nbsp;<samp>infrastructure</samp>
 
@@ -107,7 +173,7 @@
 
 <img src="https://skillicons.dev/icons?i=postgres,mysql,mongodb,redis&theme=dark" alt="databases"/>&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://skillicons.dev/icons?i=aws,azure,docker,kubernetes,nginx&theme=dark" alt="cloud and devops"/>
 
-<br/><br/><br/>
+<br/><br/>
 
 <samp>daily drivers</samp>
 
@@ -125,11 +191,13 @@
 
 <a name="analytics"></a>
 
+<samp>04 · the library</samp>
+
+## Records &amp; Ledgers
+
+<br/>
+
 <div align="center">
-
-<samp>— M I S S I O N &nbsp; C O N T R O L —</samp>
-
-<br/><br/>
 
 <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=divcodes1121&theme=tokyonight" width="97%" alt="profile overview"/>
 
@@ -149,17 +217,9 @@
 
 <img src="https://leetcard.jacoblin.cool/Div_Codes1121?theme=nord&font=JetBrains%20Mono&ext=heatmap&border=0&radius=14" width="60%" alt="leetcode profile"/>
 
-</div>
+<br/><br/>
 
-<br/>
-
-<img src="https://raw.githubusercontent.com/divcodes1121/divcodes1121/main/assets/divider.svg" width="100%" alt=""/>
-
-<br/>
-
-<div align="center">
-
-<samp>— C O N T R I B U T I O N &nbsp; U N I V E R S E —</samp>
+<samp>one year of commits, rendered three ways</samp>
 
 <br/><br/>
 
@@ -181,15 +241,7 @@
 
 <img src="https://raw.githubusercontent.com/divcodes1121/divcodes1121/main/profile-3d-contrib/profile-night-view.svg" width="97%" alt="3d contribution skyline — night view"/>
 
-<br/>
-
-<samp>one year of commits, rendered three ways</samp>
-
 </div>
-
-<br/>
-
-<img src="https://raw.githubusercontent.com/divcodes1121/divcodes1121/main/assets/divider.svg" width="100%" alt=""/>
 
 <br/>
 
@@ -203,116 +255,69 @@
 
 <br/>
 
-<a name="projects"></a>
+<samp>05 · restricted area</samp>
 
-<div align="center">
+## The Terminal
 
-<samp>— F E A T U R E D &nbsp; S Y S T E M S —</samp>
-
-</div>
+It mentioned undocumented commands. It wasn't bluffing — the caches below are real. Open them.
 
 <br/>
 
-### <samp>01</samp> &nbsp;Automated Video Engine
-
-**A recipe-driven pipeline that assembles short-form video end to end — no human in the render loop.**
-
-```text
-recipes/*.yml ──▶ workflow engine ──▶ tts worker ─────▶ ffmpeg mux ──▶ export
-                       │                                    ▲
-                       ├──▶ rembg / opencv  (bg removal) ───┤
-                       └──▶ asset manager   (google api) ───┘
-```
-
-<samp>python · ffmpeg · opencv · onnx runtime &nbsp;&nbsp;|&nbsp;&nbsp; complexity ▮▮▮▮▯ &nbsp;&nbsp;|&nbsp;&nbsp; in active development</samp>
-
-<a href="https://github.com/divcodes1121/Automation_Workflow"><img src="https://img.shields.io/badge/open%20source%20→-161B22?style=for-the-badge&logo=github&logoColor=white" alt="source"/></a>
-
-<br/>
-
-<div align="right">
-
-### <samp>02</samp> &nbsp;LLM Ticket Triage &nbsp;
-
-**Support tickets read, prioritized, and routed by a language-model pipeline — an inbox that triages itself.** &nbsp;
-
-</div>
-
-```text
-   intake ──▶ llm classifier ──▶ priority scorer ──▶ router ──▶ team queues
-                    │                                  │
-                    └──── intent + sentiment ──────────┘
-```
-
-<div align="right">
-
-<samp>javascript · node · llm apis · mongodb &nbsp;&nbsp;|&nbsp;&nbsp; complexity ▮▮▮▮▯ &nbsp;&nbsp;|&nbsp;&nbsp; shipped</samp> &nbsp;
-
-<a href="https://github.com/divcodes1121/LLM-Powered-AI-Support-Ticket-Management-System"><img src="https://img.shields.io/badge/open%20source%20→-161B22?style=for-the-badge&logo=github&logoColor=white" alt="source"/></a> &nbsp;
-
-</div>
-
-<br/>
-
-### <samp>03</samp> &nbsp;Ethereum Deposit Tracker
-
-**Blockchain monitoring with a real observability stack — because "it works" isn't the same as "I can see it working."**
-
-```text
-eth rpc ──▶ scraper (ts) ──▶ mongodb ──▶ telegram alerts
-                 │
-                 └──▶ prometheus ──▶ grafana dashboards
-```
-
-<samp>typescript · mongodb · prometheus · grafana · docker &nbsp;&nbsp;|&nbsp;&nbsp; complexity ▮▮▮▯▯ &nbsp;&nbsp;|&nbsp;&nbsp; shipped</samp>
-
-<a href="https://github.com/divcodes1121/Eth-deposit-tracker"><img src="https://img.shields.io/badge/open%20source%20→-161B22?style=for-the-badge&logo=github&logoColor=white" alt="source"/></a>
-
-<br/>
-
-<div align="right">
-
-### <samp>04</samp> &nbsp;Metro Booking System &nbsp;
-
-**Transit reservations on Spring Boot — seat state, schedules, and payments under concurrent load.** &nbsp;
-
-</div>
-
-```text
-client ──▶ spring boot api ──▶ seat-lock service ──▶ mysql
-                 │
-                 └──▶ e-ticket mailer ──▶ inbox
-```
-
-<div align="right">
-
-<samp>java · spring boot · mysql &nbsp;&nbsp;|&nbsp;&nbsp; complexity ▮▮▮▯▯ &nbsp;&nbsp;|&nbsp;&nbsp; shipped</samp> &nbsp;
-
-<a href="https://github.com/divcodes1121/Metro-Ticket-Booking-System"><img src="https://img.shields.io/badge/open%20source%20→-161B22?style=for-the-badge&logo=github&logoColor=white" alt="source"/></a> &nbsp;
-
-</div>
-
-<br/>
-
-<div align="center">
-
-<samp><a href="https://github.com/divcodes1121?tab=repositories">the other 26 live here ↗</a></samp>
-
-</div>
-
-<br/>
-
-<img src="https://raw.githubusercontent.com/divcodes1121/divcodes1121/main/assets/divider.svg" width="100%" alt=""/>
+<img src="https://raw.githubusercontent.com/divcodes1121/divcodes1121/main/assets/terminal.svg" width="100%" alt="terminal session with hidden commands"/>
 
 <br/><br/>
 
-<div align="center">
+<details>
+<summary><samp>▣&nbsp; cache 01 — one true fact</samp></summary>
 
-> ### *Software is the only engineering discipline where you can rebuild the bridge every night until it stops falling.*
->
-> <samp>so I rebuild, nightly.</samp>
+<br/>
 
-</div>
+> The video pipeline removes backgrounds with `rembg` running on ONNX — no green screen anywhere in the building. The machine imagines the scene behind you instead.
+
+</details>
+
+<details>
+<summary><samp>▣&nbsp; cache 02 — achievements, the real kind</samp></summary>
+
+<br/>
+
+<samp>🏅 first system shipped — metro booking, 2024</samp><br/>
+<samp>🏅 observability unlocked — prometheus + grafana wired into the eth tracker</samp><br/>
+<samp>🏅 30 public repositories and counting</samp><br/>
+<samp>🏅 an llm pipeline that triages tickets while I sleep</samp><br/>
+<samp>🏅 contribution skyline rendered in 3d — nightly</samp>
+
+</details>
+
+<details>
+<summary><samp>▣&nbsp; cache 03 — easter egg</samp></summary>
+
+<br/>
+
+> You found the 30th repository. It's this one — the profile is itself a project: nine hand-authored animated SVGs, zero templates, one <a href="https://github.com/divcodes1121/divcodes1121">open source page ↗</a>.
+
+</details>
+
+<details>
+<summary><samp>🔐&nbsp; the vault — password required</samp></summary>
+
+<br/>
+
+<samp>hint: it's the classic. two words. say it.</samp>
+
+<br/><br/>
+
+<details>
+<summary><samp>› open sesame</samp></summary>
+
+<br/>
+
+> **hidden achievement unlocked — <samp>EXPLORER</samp>**
+> You opened everything on this page. That instinct — pulling threads until the system gives up its secrets — is the whole job. If you hire people, I'd like to talk: <a href="mailto:singh.divyanshu1121@gmail.com">singh.divyanshu1121@gmail.com</a>
+
+</details>
+
+</details>
 
 <br/>
 
@@ -322,11 +327,15 @@ client ──▶ spring boot api ──▶ seat-lock service ──▶ mysql
 
 <a name="contact"></a>
 
+<samp>06 · the shop</samp>
+
+## Open a Channel
+
+Open to collaboration, internships, and hard problems.
+
+<br/>
+
 <div align="center">
-
-<samp>— O P E N &nbsp; A &nbsp; C H A N N E L —</samp>
-
-<br/><br/>
 
 <a href="https://www.linkedin.com/in/divyanshu-singh1121/"><img src="https://img.shields.io/badge/linkedin-%2F%2F%20divyanshu--singh1121-161B22?style=for-the-badge&logo=linkedin&logoColor=0A66C2" alt="LinkedIn"/></a>
 &nbsp;

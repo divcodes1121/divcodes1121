@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 880 340" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#8A2BE2"/>
+      <stop offset="1" stop-color="#00D9FF"/>
+    </linearGradient>
+    <filter id="soft" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="2.2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <style>
+      .mono { font-family: Consolas, 'SF Mono', Menlo, monospace; }
+      .link { stroke: #21262D; stroke-width: 1.2; }
+      .sig { stroke: url(#accent); stroke-width: 1.6; stroke-linecap: round;
+             stroke-dasharray: 14 86; animation: sig 3.8s linear infinite; }
+      @keyframes sig { from { stroke-dashoffset: 100; } to { stroke-dashoffset: 0; } }
+      .s2 { animation-delay: .7s; } .s3 { animation-delay: 1.3s; } .s4 { animation-delay: 1.9s; } .s5 { animation-delay: 2.6s; }
+      .ring { transform-box: fill-box; transform-origin: center; animation: spin 40s linear infinite; }
+      @keyframes spin { to { transform: rotate(360deg); } }
+      .pulse { transform-box: fill-box; transform-origin: center; animation: pulse 3.2s ease-out infinite; }
+      .p2 { animation-delay: 1.6s; }
+      @keyframes pulse { 0% { transform: scale(1); opacity: .5; } 100% { transform: scale(4.2); opacity: 0; } }
+      .breathe { transform-box: fill-box; transform-origin: center; animation: breathe 3.2s ease-in-out infinite alternate; }
+      @keyframes breathe { from { transform: scale(1); } to { transform: scale(1.12); } }
+      .node { animation: glow 3s ease-in-out infinite alternate; }
+      .n2 { animation-delay: .6s; } .n3 { animation-delay: 1.2s; } .n4 { animation-delay: 1.8s; } .n5 { animation-delay: 2.4s; }
+      @keyframes glow { from { opacity: .55; } to { opacity: 1; } }
+    </style>
+  </defs>
+
+  <rect width="880" height="340" fill="#0D1117" rx="14" stroke="#21262D" stroke-width="1.5"/>
+
+  <!-- orbit -->
+  <circle class="ring" cx="440" cy="170" r="118" fill="none" stroke="#21262D" stroke-width="1" stroke-dasharray="3 9"/>
+
+  <!-- links (base + signal) -->
+  <path class="link" d="M 440 170 L 250 96"  pathLength="100"/><path class="sig"    d="M 440 170 L 250 96"  pathLength="100" fill="none"/>
+  <path class="link" d="M 440 170 L 630 96"  pathLength="100"/><path class="sig s2" d="M 440 170 L 630 96"  pathLength="100" fill="none"/>
+  <path class="link" d="M 440 170 L 214 244" pathLength="100"/><path class="sig s3" d="M 440 170 L 214 244" pathLength="100" fill="none"/>
+  <path class="link" d="M 440 170 L 666 244" pathLength="100"/><path class="sig s4" d="M 440 170 L 666 244" pathLength="100" fill="none"/>
+  <path class="link" d="M 440 170 L 440 52"  pathLength="100"/><path class="sig s5" d="M 440 170 L 440 52"  pathLength="100" fill="none"/>
+
+  <!-- core -->
+  <circle class="pulse" cx="440" cy="170" r="16" fill="none" stroke="#8A2BE2" stroke-width="1"/>
+  <circle class="pulse p2" cx="440" cy="170" r="16" fill="none" stroke="#00D9FF" stroke-width="1"/>
+  <circle class="breathe" cx="440" cy="170" r="15" fill="none" stroke="url(#accent)" stroke-width="1.6"/>
+  <circle cx="440" cy="170" r="6" fill="#FFFFFF" filter="url(#soft)"/>
+
+  <!-- satellites -->
+  <circle class="node"    cx="250" cy="96"  r="4" fill="#8A2BE2" filter="url(#soft)"/>
+  <circle class="node n2" cx="630" cy="96"  r="4" fill="#00D9FF" filter="url(#soft)"/>
+  <circle class="node n3" cx="214" cy="244" r="4" fill="#00D9FF" filter="url(#soft)"/>
+  <circle class="node n4" cx="666" cy="244" r="4" fill="#8A2BE2" filter="url(#soft)"/>
+  <circle class="node n5" cx="440" cy="52"  r="4" fill="#E6EDF3" filter="url(#soft)"/>
+
+  <!-- labels: stable, soft gray -->
+  <g class="mono" font-size="12" fill="#A1A1AA">
+    <text x="234" y="82"  text-anchor="end">python</text>
+    <text x="646" y="82">machine learning</text>
+    <text x="198" y="258" text-anchor="end">backend</text>
+    <text x="682" y="258">cloud</text>
+    <text x="440" y="36" text-anchor="middle">systems</text>
+  </g>
+
+  <text x="28" y="318" class="mono" font-size="10" letter-spacing="2" fill="#30363D">CORE — five disciplines, one loop</text>
+  <text x="852" y="318" text-anchor="end" class="mono" font-size="10" fill="#30363D">signal: continuous</text>
+</svg>
