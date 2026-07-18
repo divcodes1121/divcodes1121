@@ -1,4 +1,4 @@
-﻿name: Generate Pacman Contribution Graph
+name: Generate Pacman Contribution Graph
 
 on:
   schedule:
@@ -15,17 +15,17 @@ jobs:
       contents: write
 
     steps:
-      # âœ… Checkout repo
+      # ✅ Checkout repo
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      # âœ… Generate Pacman
+      # ✅ Generate Pacman
       - name: Generate Pacman Graph
         uses: abozanona/pacman-contribution-graph@main
         with:
           github_user_name: divcodes1121
 
-      # ðŸ” Optional debug (safe to keep/remove)
+      # 🔍 Optional debug (safe to keep/remove)
       - name: Check generated files
         run: |
           echo "Listing root:"
@@ -33,7 +33,7 @@ jobs:
           echo "Listing dist:"
           ls -la dist || echo "dist missing"
 
-      # âœ… Deploy WITHOUT deleting snake files
+      # ✅ Deploy WITHOUT deleting snake files
       - name: Deploy to output branch
         uses: peaceiris/actions-gh-pages@v3
         with:
