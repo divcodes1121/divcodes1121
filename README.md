@@ -388,14 +388,16 @@ Feature engineering, model stacking, and deployment — the full ML lifecycle ra
 <!-- ── CARD 06 ── -->
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:6B3FD4,100:00D9FF&height=44&section=header&text=06%20%E2%80%94%20AUTOMATION%20WORKFLOW%20ENGINE&fontSize=17&fontColor=FFFFFF&fontAlignY=58" width="98%"/>
 
-**Python automation tooling for orchestrating repetitive engineering work.**
-The most recently active project in the arsenal — scripting away the parts of the job that shouldn't need a human.
+**A recipe-driven pipeline that assembles short-form video content end to end.**
+Modular Python backend stitching TTS voiceover, gameplay footage, and programmatic image processing — background removal, compositing, and encoding — into finished output. The most actively developed project in the arsenal.
 
 <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/>
-<img src="https://img.shields.io/badge/Automation-8A2BE2?style=flat-square&logo=githubactions&logoColor=white"/>
-<img src="https://img.shields.io/badge/Scripting-00D9FF?style=flat-square&logo=gnubash&logoColor=black"/>
+<img src="https://img.shields.io/badge/FFmpeg-007808?style=flat-square&logo=ffmpeg&logoColor=white"/>
+<img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white"/>
+<img src="https://img.shields.io/badge/ONNX%20Runtime-8A2BE2?style=flat-square&logo=onnx&logoColor=white"/>
+<img src="https://img.shields.io/badge/Google%20API-4285F4?style=flat-square&logo=google&logoColor=white"/>
 
-`◆ Workflow Orchestration` · `◆ Task Automation` · `◆ Pipeline Scripting`
+`◆ TTS Synthesis` · `◆ Video Encoding` · `◆ Background Removal` · `◆ Recipe Workflows`
 
 <a href="https://github.com/divcodes1121/Automation_Workflow">
   <img src="https://img.shields.io/badge/VIEW%20REPOSITORY-0D1117?style=for-the-badge&logo=github&logoColor=white&labelColor=8A2BE2"/>
