@@ -1,0 +1,40 @@
+name: Cursed Energy Metrics
+
+on:
+  # NOTE: manual-only until the METRICS_TOKEN secret exists.
+  # Once you've added the secret and confirmed a manual run succeeds,
+  # uncomment the schedule below to regenerate daily.
+  #
+  # schedule:
+  #   - cron: "0 19 * * *"   # 19:00 UTC / 00:30 IST
+  workflow_dispatch:
+
+jobs:
+  metrics:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Generate metrics panel
+        uses: lowlighter/metrics@v3.34
+        with:
+          # REQUIRED: create a classic PAT with `public_repo` scope and save it
+          # as a repository secret named METRICS_TOKEN. See setup notes.
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: divcodes1121
+          filename: github-metrics.svg
+          template: classic
+          base: header, activity, community, repositories, metadata
+          config_timezone: Asia/Kolkata
+          plugin_languages: yes
+          plugin_languages_details: bytes-size, percentage
+          plugin_languages_limit: 12
+          plugin_lines: yes
+          plugin_habits: yes
+          plugin_habits_from: 200
+          plugin_habits_days: 14
+          plugin_habits_facts: yes
+          plugin_habits_charts: yes
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year
