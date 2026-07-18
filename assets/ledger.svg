@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 880 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#8A2BE2"/>
+      <stop offset="1" stop-color="#00D9FF"/>
+    </linearGradient>
+    <style>
+      .mono { font-family: Consolas, 'SF Mono', Menlo, monospace; }
+      .sans { font-family: 'Segoe UI', system-ui, sans-serif; }
+      .row { opacity: 0; animation: row 14s ease infinite; }
+      .r1 { animation-delay: .3s; } .r2 { animation-delay: .8s; } .r3 { animation-delay: 1.3s; }
+      .r4 { animation-delay: 1.8s; } .r5 { animation-delay: 2.3s; }
+      @keyframes row { 0% { opacity: 0; transform: translateX(-6px); } 3% { opacity: 1; transform: none; } 92% { opacity: 1; } 97%,100% { opacity: 0; } }
+      .leader { stroke: #30363D; stroke-width: 1.6; stroke-dasharray: 2 6; stroke-dashoffset: 300;
+                animation: leader 14s ease infinite; }
+      .e1 { animation-delay: .45s; } .e2 { animation-delay: .95s; } .e3 { animation-delay: 1.45s; }
+      .e4 { animation-delay: 1.95s; } .e5 { animation-delay: 2.45s; }
+      @keyframes leader { 0% { stroke-dashoffset: 300; opacity: 0; } 1% { opacity: 1; } 8% { stroke-dashoffset: 0; } 92% { stroke-dashoffset: 0; opacity: 1; } 97%,100% { opacity: 0; } }
+      .stamp { transform-box: fill-box; transform-origin: center; opacity: 0;
+               animation: stamp 14s cubic-bezier(.2,1.6,.4,1) infinite; animation-delay: 3s; }
+      @keyframes stamp { 0% { opacity: 0; transform: rotate(-12deg) scale(1.6); } 2.5% { opacity: 1; transform: rotate(-12deg) scale(1); } 92% { opacity: 1; } 97%,100% { opacity: 0; } }
+      .scanline { animation: scanline 3s ease-in-out infinite alternate; }
+      @keyframes scanline { from { transform: translateX(0); } to { transform: translateX(96px); } }
+    </style>
+  </defs>
+
+  <rect x="1" y="1" width="878" height="298" rx="14" fill="#0D1117" stroke="#21262D" stroke-width="1.5"/>
+
+  <!-- header rule -->
+  <text x="36" y="48" class="mono" font-size="11" letter-spacing="4" fill="#7D8590">LEDGER Nº 004</text>
+  <text x="36" y="66" class="sans" font-size="12" fill="#30363D">records of construction — divos archive</text>
+  <path d="M 36 80 H 560" stroke="#21262D" stroke-width="1"/>
+
+  <!-- book spines, top right -->
+  <g>
+    <rect x="700" y="34" width="12" height="46" rx="1" fill="#161B22" stroke="#30363D" stroke-width="1"/>
+    <rect x="716" y="40" width="12" height="40" rx="1" fill="#1B1730" stroke="#8A2BE2" stroke-opacity=".5" stroke-width="1"/>
+    <rect x="732" y="30" width="12" height="50" rx="1" fill="#161B22" stroke="#30363D" stroke-width="1"/>
+    <rect x="748" y="44" width="12" height="36" rx="1" fill="#102028" stroke="#00D9FF" stroke-opacity=".5" stroke-width="1"/>
+    <g transform="rotate(9 776 80)">
+      <rect x="770" y="34" width="12" height="46" rx="1" fill="#161B22" stroke="#30363D" stroke-width="1"/>
+    </g>
+    <path d="M 696 82 H 800" stroke="#21262D" stroke-width="2"/>
+  </g>
+
+  <!-- catalog rows -->
+  <g class="mono" font-size="13">
+    <g class="row r1">
+      <text x="36" y="116" fill="#E6EDF3">volumes on record</text>
+      <text x="560" y="116" text-anchor="end" fill="#FFFFFF" font-size="15">30</text>
+    </g>
+    <path class="leader e1" d="M 196 112 H 528" pathLength="300"/>
+
+    <g class="row r2">
+      <text x="36" y="150" fill="#E6EDF3">languages in circulation</text>
+      <text x="560" y="150" text-anchor="end" fill="#FFFFFF" font-size="15">9</text>
+    </g>
+    <path class="leader e2" d="M 252 146 H 528" pathLength="300"/>
+
+    <g class="row r3">
+      <text x="36" y="184" fill="#E6EDF3">disciplines catalogued</text>
+      <text x="560" y="184" text-anchor="end" fill="#FFFFFF" font-size="15">5</text>
+    </g>
+    <path class="leader e3" d="M 234 180 H 528" pathLength="300"/>
+
+    <g class="row r4">
+      <text x="36" y="218" fill="#E6EDF3">systems shipped</text>
+      <text x="560" y="218" text-anchor="end" fill="#FFFFFF" font-size="15">4</text>
+    </g>
+    <path class="leader e4" d="M 180 214 H 528" pathLength="300"/>
+
+    <g class="row r5">
+      <text x="36" y="252" fill="#E6EDF3">archive established</text>
+      <text x="560" y="252" text-anchor="end" fill="#FFFFFF" font-size="15">2023</text>
+    </g>
+    <path class="leader e5" d="M 206 248 H 528" pathLength="300"/>
+  </g>
+
+  <!-- verification stamp -->
+  <g class="stamp">
+    <circle cx="724" cy="176" r="52" fill="none" stroke="#8A2BE2" stroke-width="2" stroke-opacity=".75"/>
+    <circle cx="724" cy="176" r="44" fill="none" stroke="#8A2BE2" stroke-width="1" stroke-opacity=".45" stroke-dasharray="3 4"/>
+    <text x="724" y="168" text-anchor="middle" class="mono" font-size="11" letter-spacing="2" fill="#8A2BE2" opacity=".9">DIVOS</text>
+    <text x="724" y="184" text-anchor="middle" class="mono" font-size="9" letter-spacing="2" fill="#8A2BE2" opacity=".8">ARCHIVE</text>
+    <text x="724" y="199" text-anchor="middle" class="mono" font-size="8" letter-spacing="1" fill="#8A2BE2" opacity=".7">— VERIFIED —</text>
+  </g>
+
+  <!-- barcode -->
+  <g transform="translate(676,246)">
+    <rect x="0" y="0" width="2" height="22" fill="#E6EDF3"/><rect x="5" y="0" width="1" height="22" fill="#E6EDF3"/><rect x="9" y="0" width="3" height="22" fill="#E6EDF3"/><rect x="15" y="0" width="1" height="22" fill="#E6EDF3"/><rect x="19" y="0" width="2" height="22" fill="#E6EDF3"/><rect x="25" y="0" width="4" height="22" fill="#E6EDF3"/><rect x="32" y="0" width="1" height="22" fill="#E6EDF3"/><rect x="36" y="0" width="2" height="22" fill="#E6EDF3"/><rect x="42" y="0" width="3" height="22" fill="#E6EDF3"/><rect x="48" y="0" width="1" height="22" fill="#E6EDF3"/><rect x="52" y="0" width="2" height="22" fill="#E6EDF3"/><rect x="58" y="0" width="1" height="22" fill="#E6EDF3"/><rect x="62" y="0" width="4" height="22" fill="#E6EDF3"/><rect x="70" y="0" width="2" height="22" fill="#E6EDF3"/><rect x="75" y="0" width="1" height="22" fill="#E6EDF3"/><rect x="79" y="0" width="3" height="22" fill="#E6EDF3"/><rect x="85" y="0" width="2" height="22" fill="#E6EDF3"/><rect x="90" y="0" width="1" height="22" fill="#E6EDF3"/><rect x="94" y="0" width="2" height="22" fill="#E6EDF3"/>
+    <rect class="scanline" x="0" y="-2" width="1.5" height="26" fill="#00D9FF" opacity=".9"/>
+    <text x="48" y="34" text-anchor="middle" class="mono" font-size="8" letter-spacing="3" fill="#7D8590">divcodes1121</text>
+  </g>
+
+  <!-- footer wit -->
+  <text x="36" y="282" class="mono" font-size="10" fill="#30363D">checked out: daily · returned: never</text>
+</svg>

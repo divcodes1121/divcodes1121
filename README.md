@@ -195,27 +195,37 @@ The flagship first — drawn as a blueprint, because that's how it was built.
 
 ## Records &amp; Ledgers
 
+Every archive keeps an index card. This one stamps itself.
+
 <br/>
+
+<img src="https://raw.githubusercontent.com/divcodes1121/divcodes1121/main/assets/ledger.svg" width="100%" alt="ledger — records of construction"/>
+
+<br/><br/>
 
 <div align="center">
 
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=divcodes1121&theme=tokyonight" width="97%" alt="profile overview"/>
-
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=divcodes1121&theme=tokyonight" width="48.5%" alt="languages by repo"/><img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=divcodes1121&theme=tokyonight" width="48.5%" alt="languages by commit"/>
-
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=divcodes1121&theme=tokyonight" width="48.5%" alt="stats"/><img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=divcodes1121&theme=tokyonight&utcOffset=5.5" width="48.5%" alt="productive hours"/>
+<samp>live registers</samp>
 
 <br/><br/>
 
-<img src="https://streak-stats.demolab.com/?user=divcodes1121&theme=tokyonight&hide_border=true&background=0D1117&ring=8A2BE2&fire=00D9FF&currStreakLabel=8A2BE2&sideNums=E6EDF3&sideLabels=7D8590&dates=30363D&currStreakNum=E6EDF3" width="72%" alt="contribution streak"/>
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=divcodes1121&theme=github_dark" width="97%" alt="profile overview"/>
+
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=divcodes1121&theme=github_dark" width="48.5%" alt="stats"/><img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=divcodes1121&theme=github_dark" width="48.5%" alt="languages by commit"/>
+
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=divcodes1121&theme=github_dark" width="48.5%" alt="languages by repo"/><img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=divcodes1121&theme=github_dark&utcOffset=5.5" width="48.5%" alt="productive hours"/>
 
 <br/><br/>
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=divcodes1121&theme=react-dark&hide_border=true&bg_color=0D1117&color=7D8590&line=8A2BE2&point=00D9FF&area=true&area_color=8A2BE2&custom_title=contribution%20frequency%20—%20last%2012%20months" width="97%" alt="activity graph"/>
+<img src="https://streak-stats.demolab.com/?user=divcodes1121&hide_border=true&background=0D1117&ring=8A2BE2&fire=00D9FF&currStreakLabel=8A2BE2&sideNums=FFFFFF&sideLabels=7D8590&dates=30363D&currStreakNum=FFFFFF&stroke=21262D" width="72%" alt="contribution streak"/>
 
 <br/><br/>
 
-<img src="https://leetcard.jacoblin.cool/Div_Codes1121?theme=nord&font=JetBrains%20Mono&ext=heatmap&border=0&radius=14" width="60%" alt="leetcode profile"/>
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=divcodes1121&hide_border=true&bg_color=0D1117&color=7D8590&line=8A2BE2&point=00D9FF&area=true&area_color=8A2BE2&title_color=E6EDF3&custom_title=contribution%20frequency%20—%20last%2012%20months" width="97%" alt="activity graph"/>
+
+<br/><br/>
+
+<img src="https://leetcard.jacoblin.cool/Div_Codes1121?theme=dark&font=JetBrains%20Mono&ext=heatmap&border=0&radius=14" width="60%" alt="leetcode profile"/>
 
 <br/><br/>
 
