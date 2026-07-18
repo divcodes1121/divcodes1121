@@ -205,21 +205,21 @@ Every archive keeps an index card. This one stamps itself.
 
 <div align="center">
 
-<samp>live registers</samp>
+<samp>live registers — regenerated nightly from real telemetry</samp>
+
+</div>
+
+<br/>
+
+<img src="https://raw.githubusercontent.com/divcodes1121/divcodes1121/main/assets/generated/station.svg" width="100%" alt="command deck — streak fuel core, yearly contributions, 14-day thrusters, repo planet"/>
 
 <br/><br/>
 
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=divcodes1121&theme=github_dark" width="97%" alt="profile overview"/>
+<img src="https://raw.githubusercontent.com/divcodes1121/divcodes1121/main/assets/generated/cargo.svg" width="100%" alt="cargo hold — languages as ore blocks in a hotbar, by volume mined"/>
 
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=divcodes1121&theme=github_dark" width="48.5%" alt="stats"/><img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=divcodes1121&theme=github_dark" width="48.5%" alt="languages by commit"/>
+<br/>
 
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=divcodes1121&theme=github_dark" width="48.5%" alt="languages by repo"/><img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=divcodes1121&theme=github_dark&utcOffset=5.5" width="48.5%" alt="productive hours"/>
-
-<br/><br/>
-
-<img src="https://streak-stats.demolab.com/?user=divcodes1121&hide_border=true&background=0D1117&ring=8A2BE2&fire=00D9FF&currStreakLabel=8A2BE2&sideNums=FFFFFF&sideLabels=7D8590&dates=30363D&currStreakNum=FFFFFF&stroke=21262D" width="72%" alt="contribution streak"/>
-
-<br/><br/>
+<div align="center">
 
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=divcodes1121&hide_border=true&bg_color=0D1117&color=7D8590&line=8A2BE2&point=00D9FF&area=true&area_color=8A2BE2&title_color=E6EDF3&custom_title=contribution%20frequency%20—%20last%2012%20months" width="97%" alt="activity graph"/>
 
