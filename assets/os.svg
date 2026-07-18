@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 880 430" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#8A2BE2"/>
+      <stop offset="1" stop-color="#00D9FF"/>
+    </linearGradient>
+    <style>
+      .mono { font-family: Consolas, 'SF Mono', Menlo, monospace; }
+      .sans { font-family: 'Segoe UI', system-ui, sans-serif; }
+      .fill { transform-box: fill-box; transform-origin: left center; transform: scaleX(0);
+              animation: fill 14s cubic-bezier(.25,0,.2,1) infinite; }
+      @keyframes fill { 0% { transform: scaleX(0); } 8% { transform: scaleX(1); } 92% { transform: scaleX(1); } 100% { transform: scaleX(0); } }
+      .f1 { animation-delay: .1s; } .f2 { animation-delay: .22s; } .f3 { animation-delay: .34s; }
+      .f4 { animation-delay: .46s; } .f5 { animation-delay: .58s; } .f6 { animation-delay: .7s; }
+      .f7 { animation-delay: .82s; } .f8 { animation-delay: .94s; }
+      .pulse { transform-box: fill-box; transform-origin: center; animation: pulse 2.4s ease-out infinite; }
+      @keyframes pulse { 0% { transform: scale(1); opacity: .7; } 100% { transform: scale(3); opacity: 0; } }
+      .tick { animation: tick 4s steps(1) infinite; }
+      @keyframes tick { 0%,100% { opacity: 1; } 50% { opacity: .35; } }
+    </style>
+  </defs>
+
+  <!-- LEFT · SYSTEM MONITOR -->
+  <rect x="1" y="1" width="428" height="428" rx="14" fill="#0D1117" stroke="#21262D" stroke-width="1.5"/>
+  <text x="28" y="40" class="mono" font-size="11" letter-spacing="4" fill="#7D8590">SYSTEM MONITOR</text>
+  <text x="402" y="40" text-anchor="end" class="mono tick" font-size="11" fill="#3FB950">LIVE</text>
+  <rect x="28" y="52" width="374" height="1" fill="#21262D"/>
+
+  <g class="mono" font-size="12">
+    <text x="28" y="90" fill="#E6EDF3">backend</text>
+    <rect x="160" y="82" width="200" height="6" rx="3" fill="#21262D"/>
+    <rect class="fill f1" x="160" y="82" width="176" height="6" rx="3" fill="url(#accent)"/>
+    <text x="402" y="90" text-anchor="end" fill="#00D9FF">88</text>
+
+    <text x="28" y="132" fill="#E6EDF3">problem solving</text>
+    <rect x="160" y="124" width="200" height="6" rx="3" fill="#21262D"/>
+    <rect class="fill f2" x="160" y="124" width="168" height="6" rx="3" fill="url(#accent)"/>
+    <text x="402" y="132" text-anchor="end" fill="#00D9FF">84</text>
+
+    <text x="28" y="174" fill="#E6EDF3">ai engine</text>
+    <rect x="160" y="166" width="200" height="6" rx="3" fill="#21262D"/>
+    <rect class="fill f3" x="160" y="166" width="164" height="6" rx="3" fill="url(#accent)"/>
+    <text x="402" y="174" text-anchor="end" fill="#00D9FF">82</text>
+
+    <text x="28" y="216" fill="#E6EDF3">machine learning</text>
+    <rect x="160" y="208" width="200" height="6" rx="3" fill="#21262D"/>
+    <rect class="fill f4" x="160" y="208" width="160" height="6" rx="3" fill="url(#accent)"/>
+    <text x="402" y="216" text-anchor="end" fill="#00D9FF">80</text>
+
+    <text x="28" y="258" fill="#E6EDF3">databases</text>
+    <rect x="160" y="250" width="200" height="6" rx="3" fill="#21262D"/>
+    <rect class="fill f5" x="160" y="250" width="152" height="6" rx="3" fill="url(#accent)"/>
+    <text x="402" y="258" text-anchor="end" fill="#00D9FF">76</text>
+
+    <text x="28" y="300" fill="#E6EDF3">system design</text>
+    <rect x="160" y="292" width="200" height="6" rx="3" fill="#21262D"/>
+    <rect class="fill f6" x="160" y="292" width="148" height="6" rx="3" fill="url(#accent)"/>
+    <text x="402" y="300" text-anchor="end" fill="#00D9FF">74</text>
+
+    <text x="28" y="342" fill="#E6EDF3">cloud infra</text>
+    <rect x="160" y="334" width="200" height="6" rx="3" fill="#21262D"/>
+    <rect class="fill f7" x="160" y="334" width="140" height="6" rx="3" fill="url(#accent)"/>
+    <text x="402" y="342" text-anchor="end" fill="#00D9FF">70</text>
+
+    <text x="28" y="384" fill="#E6EDF3">devops</text>
+    <rect x="160" y="376" width="200" height="6" rx="3" fill="#21262D"/>
+    <rect class="fill f8" x="160" y="376" width="132" height="6" rx="3" fill="url(#accent)"/>
+    <text x="402" y="384" text-anchor="end" fill="#00D9FF">66</text>
+  </g>
+
+  <!-- RIGHT · SYSTEM INFO -->
+  <rect x="451" y="1" width="428" height="428" rx="14" fill="#0D1117" stroke="#21262D" stroke-width="1.5"/>
+  <text x="478" y="40" class="mono" font-size="11" letter-spacing="4" fill="#7D8590">SYSTEM INFO</text>
+  <text x="852" y="40" text-anchor="end" class="mono" font-size="11" fill="#7D8590">divos 4.0</text>
+  <rect x="478" y="52" width="374" height="1" fill="#21262D"/>
+
+  <g class="mono" font-size="12">
+    <text x="478" y="92" fill="#30363D" letter-spacing="2">MISSION</text>
+    <text x="478" y="112" fill="#E6EDF3" font-size="13">production-grade LLM pipelines</text>
+
+    <text x="478" y="152" fill="#30363D" letter-spacing="2">CURRENT BUILD</text>
+    <text x="478" y="172" fill="#E6EDF3" font-size="13">automation_workflow — video engine</text>
+
+    <text x="478" y="212" fill="#30363D" letter-spacing="2">CORE STACK</text>
+    <text x="478" y="232" fill="#E6EDF3" font-size="13">python · java · spring · tensorflow</text>
+
+    <text x="478" y="272" fill="#30363D" letter-spacing="2">CLOUD</text>
+    <text x="478" y="292" fill="#E6EDF3" font-size="13">aws · azure · docker · kubernetes</text>
+
+    <text x="478" y="332" fill="#30363D" letter-spacing="2">LOCALE</text>
+    <text x="478" y="352" fill="#E6EDF3" font-size="13">lucknow, in — utc+05:30</text>
+
+    <text x="478" y="392" fill="#30363D" letter-spacing="2">AVAILABILITY</text>
+    <circle cx="484" cy="408" r="4" fill="#3FB950"/>
+    <circle class="pulse" cx="484" cy="408" r="4" fill="none" stroke="#3FB950" stroke-width="1"/>
+    <text x="498" y="412" fill="#3FB950" font-size="13">open — internships &amp; collaboration</text>
+  </g>
+</svg>

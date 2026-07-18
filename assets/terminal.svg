@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 880 360" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .mono { font-family: Consolas, 'SF Mono', Menlo, monospace; font-size: 13px; }
+      .cmd { opacity: 0; animation: show 24s linear infinite; }
+      .out { opacity: 0; animation: show 24s linear infinite; }
+      .c1 { animation-delay: .4s; }  .o1 { animation-delay: 1.5s; }
+      .c2 { animation-delay: 2.8s; } .o2 { animation-delay: 3.9s; }
+      .c3 { animation-delay: 5.2s; } .o3 { animation-delay: 6.3s; }
+      .c4 { animation-delay: 7.6s; } .o4 { animation-delay: 8.7s; }
+      .c5 { animation-delay: 10s; }
+      @keyframes show {
+        0% { opacity: 0; transform: translateY(3px); }
+        1.2% { opacity: 1; transform: translateY(0); }
+        91% { opacity: 1; }
+        96%, 100% { opacity: 0; }
+      }
+      .caret { animation: blink 1s steps(1) infinite; }
+      @keyframes blink { 50% { opacity: 0; } }
+    </style>
+  </defs>
+
+  <rect x="1" y="1" width="878" height="358" rx="14" fill="#0D1117" stroke="#21262D" stroke-width="1.5"/>
+  <rect x="1" y="1" width="878" height="40" rx="14" fill="#161B22"/>
+  <rect x="1" y="27" width="878" height="14" fill="#161B22"/>
+  <circle cx="28" cy="21" r="5.5" fill="#30363D"/>
+  <circle cx="48" cy="21" r="5.5" fill="#30363D"/>
+  <circle cx="68" cy="21" r="5.5" fill="#00D9FF" opacity="0.8"/>
+  <text x="440" y="25" text-anchor="middle" class="mono" fill="#7D8590" letter-spacing="2">divyanshu@divos: ~</text>
+  <rect x="1" y="41" width="878" height="1" fill="#21262D"/>
+
+  <g class="mono">
+    <text class="cmd c1" x="32" y="74"><tspan fill="#00D9FF">divyanshu@divos</tspan><tspan fill="#7D8590">:</tspan><tspan fill="#8A2BE2">~</tspan><tspan fill="#7D8590">$</tspan><tspan fill="#E6EDF3" dx="8">whoami</tspan></text>
+    <text class="out o1" x="32" y="96" fill="#7D8590">ai &amp; backend engineer — cse (ai &amp; ml) @ vit-ap university</text>
+
+    <text class="cmd c2" x="32" y="130"><tspan fill="#00D9FF">divyanshu@divos</tspan><tspan fill="#7D8590">:</tspan><tspan fill="#8A2BE2">~</tspan><tspan fill="#7D8590">$</tspan><tspan fill="#E6EDF3" dx="8">skills --top</tspan></text>
+    <text class="out o2" x="32" y="152" fill="#7D8590">python · java · spring boot · tensorflow · docker · aws</text>
+
+    <text class="cmd c3" x="32" y="186"><tspan fill="#00D9FF">divyanshu@divos</tspan><tspan fill="#7D8590">:</tspan><tspan fill="#8A2BE2">~</tspan><tspan fill="#7D8590">$</tspan><tspan fill="#E6EDF3" dx="8">cat mission.txt</tspan></text>
+    <text class="out o3" x="32" y="208" fill="#7D8590">build intelligent systems that survive contact with production.</text>
+
+    <text class="cmd c4" x="32" y="242"><tspan fill="#00D9FF">divyanshu@divos</tspan><tspan fill="#7D8590">:</tspan><tspan fill="#8A2BE2">~</tspan><tspan fill="#7D8590">$</tspan><tspan fill="#E6EDF3" dx="8">uptime</tspan></text>
+    <text class="out o4" x="32" y="264" fill="#7D8590">3 yrs in engineering · 30 public repos · shipping daily</text>
+
+    <text class="cmd c5" x="32" y="306"><tspan fill="#00D9FF">divyanshu@divos</tspan><tspan fill="#7D8590">:</tspan><tspan fill="#8A2BE2">~</tspan><tspan fill="#7D8590">$</tspan><tspan class="caret" fill="#E6EDF3" dx="8">▊</tspan></text>
+  </g>
+</svg>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 880 348" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#8A2BE2"/>
+      <stop offset="1" stop-color="#00D9FF"/>
+    </linearGradient>
+    <style>
+      .mono { font-family: Consolas, 'SF Mono', Menlo, monospace; font-size: 13px; }
+      .ln { opacity: 0; animation: ln 20s linear infinite; }
+      @keyframes ln {
+        0% { opacity: 0; transform: translateY(3px); }
+        1.5% { opacity: 1; transform: translateY(0); }
+        90% { opacity: 1; }
+        96%, 100% { opacity: 0; }
+      }
+      .t1 { animation-delay: .2s; }  .t2 { animation-delay: .55s; } .t3 { animation-delay: .9s; }
+      .t4 { animation-delay: 1.25s; } .t5 { animation-delay: 1.6s; } .t6 { animation-delay: 1.95s; }
+      .t7 { animation-delay: 2.3s; }  .t8 { animation-delay: 2.65s; } .t9 { animation-delay: 3s; }
+      .t10 { animation-delay: 3.35s; } .t11 { animation-delay: 4.5s; }
+      .bar { transform-box: fill-box; transform-origin: left center; transform: scaleX(0);
+             animation: bar 20s cubic-bezier(.3,0,.2,1) infinite; animation-delay: 3.6s; }
+      @keyframes bar { 0% { transform: scaleX(0); } 4.5% { transform: scaleX(1); } 90% { transform: scaleX(1); opacity:1; } 96%,100% { opacity: 0; } }
+      .caret { animation: blink 1s steps(1) infinite; }
+      @keyframes blink { 50% { opacity: 0; } }
+    </style>
+  </defs>
+
+  <rect x="1" y="1" width="878" height="346" rx="14" fill="#0D1117" stroke="#21262D" stroke-width="1.5"/>
+  <rect x="1" y="1" width="878" height="40" rx="14" fill="#161B22"/>
+  <rect x="1" y="27" width="878" height="14" fill="#161B22"/>
+  <circle cx="28" cy="21" r="5.5" fill="#30363D"/>
+  <circle cx="48" cy="21" r="5.5" fill="#30363D"/>
+  <circle cx="68" cy="21" r="5.5" fill="#8A2BE2" opacity="0.8"/>
+  <text x="440" y="25" text-anchor="middle" class="mono" fill="#7D8590" letter-spacing="2">divos — boot sequence</text>
+  <rect x="1" y="41" width="878" height="1" fill="#21262D"/>
+
+  <g class="mono">
+    <text class="ln t1" x="32" y="72" fill="#7D8590">divos v4.0 — initializing kernel</text>
+    <text class="ln t2" x="32" y="94"><tspan fill="#30363D">[ 0.001s ]</tspan><tspan fill="#E6EDF3" dx="8">mount /dev/curiosity</tspan><tspan fill="#30363D" dx="8">..................</tspan><tspan fill="#3FB950" dx="8">ok</tspan></text>
+    <text class="ln t3" x="32" y="116"><tspan fill="#30363D">[ 0.014s ]</tspan><tspan fill="#E6EDF3" dx="8">load runtime: python3</tspan><tspan fill="#30363D" dx="8">.................</tspan><tspan fill="#3FB950" dx="8">ok</tspan></text>
+    <text class="ln t4" x="32" y="138"><tspan fill="#30363D">[ 0.038s ]</tspan><tspan fill="#E6EDF3" dx="8">load runtime: jvm</tspan><tspan fill="#30363D" dx="8">.....................</tspan><tspan fill="#3FB950" dx="8">ok</tspan></text>
+    <text class="ln t5" x="32" y="160"><tspan fill="#30363D">[ 0.102s ]</tspan><tspan fill="#E6EDF3" dx="8">start service: ml-engine</tspan><tspan fill="#30363D" dx="8">..............</tspan><tspan fill="#3FB950" dx="8">ok</tspan></text>
+    <text class="ln t6" x="32" y="182"><tspan fill="#30363D">[ 0.163s ]</tspan><tspan fill="#E6EDF3" dx="8">start service: spring-boot</tspan><tspan fill="#30363D" dx="8">............</tspan><tspan fill="#3FB950" dx="8">ok</tspan></text>
+    <text class="ln t7" x="32" y="204"><tspan fill="#30363D">[ 0.201s ]</tspan><tspan fill="#E6EDF3" dx="8">start service: docker-daemon</tspan><tspan fill="#30363D" dx="8">..........</tspan><tspan fill="#3FB950" dx="8">ok</tspan></text>
+    <text class="ln t8" x="32" y="226"><tspan fill="#30363D">[ 0.288s ]</tspan><tspan fill="#E6EDF3" dx="8">connect cloud: aws · azure</tspan><tspan fill="#30363D" dx="8">............</tspan><tspan fill="#3FB950" dx="8">ok</tspan></text>
+    <text class="ln t9" x="32" y="248"><tspan fill="#30363D">[ 0.340s ]</tspan><tspan fill="#E6EDF3" dx="8">import repositories: 30 public</tspan><tspan fill="#30363D" dx="8">........</tspan><tspan fill="#3FB950" dx="8">ok</tspan></text>
+    <text class="ln t10" x="32" y="270"><tspan fill="#30363D">[ 0.412s ]</tspan><tspan fill="#E6EDF3" dx="8">calibrate problem-solver</tspan><tspan fill="#30363D" dx="8">..............</tspan><tspan fill="#3FB950" dx="8">ok</tspan></text>
+  </g>
+
+  <rect x="32" y="288" width="560" height="5" rx="2.5" fill="#21262D"/>
+  <rect class="bar" x="32" y="288" width="560" height="5" rx="2.5" fill="url(#accent)"/>
+
+  <text class="mono ln t11" x="32" y="322"><tspan fill="url(#accent)" font-weight="bold">divos ready</tspan><tspan fill="#7D8590" dx="8">— welcome, visitor</tspan><tspan class="caret" fill="#00D9FF" dx="6">▊</tspan></text>
+</svg>

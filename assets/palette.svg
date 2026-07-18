@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 640 384" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="accent" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8A2BE2"/>
+      <stop offset="1" stop-color="#00D9FF"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="18" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+    <style>
+      .mono { font-family: Consolas, 'SF Mono', Menlo, monospace; }
+      .sans { font-family: 'Segoe UI', system-ui, sans-serif; }
+      .caret { animation: blink 1.1s steps(1) infinite; }
+      @keyframes blink { 50% { opacity: 0; } }
+      .sel { animation: cycle 9s cubic-bezier(.5,0,.2,1) infinite; }
+      @keyframes cycle {
+        0%, 12%   { transform: translateY(0); }
+        16%, 28%  { transform: translateY(46px); }
+        32%, 44%  { transform: translateY(92px); }
+        48%, 60%  { transform: translateY(138px); }
+        64%, 76%  { transform: translateY(184px); }
+        80%, 94%  { transform: translateY(230px); }
+        100%      { transform: translateY(0); }
+      }
+      .win { animation: rise 0.7s cubic-bezier(.2,.8,.2,1) both; }
+      @keyframes rise { from { opacity: 0; transform: translateY(14px) scale(.985); } to { opacity: 1; transform: none; } }
+    </style>
+  </defs>
+
+  <g class="win" filter="url(#shadow)">
+    <rect x="10" y="8" width="620" height="360" rx="16" fill="#0D1117" stroke="#30363D" stroke-width="1.5"/>
+    <rect x="11.5" y="9.5" width="617" height="1" rx="0.5" fill="#FFFFFF" opacity="0.06"/>
+
+    <text x="36" y="44" class="mono" font-size="15" fill="#8A2BE2">›</text>
+    <text x="54" y="44" class="mono" font-size="14" fill="#E6EDF3">open<tspan class="caret" fill="#00D9FF">▍</tspan></text>
+    <rect x="560" y="27" width="44" height="24" rx="6" fill="#161B22" stroke="#21262D"/>
+    <text x="582" y="43" text-anchor="middle" class="mono" font-size="10" fill="#7D8590">esc</text>
+    <rect x="10" y="62" width="620" height="1" fill="#21262D"/>
+
+    <!-- selection highlight -->
+    <g class="sel">
+      <rect x="18" y="72" width="604" height="40" rx="9" fill="#8A2BE2" opacity="0.13"/>
+      <rect x="18" y="78" width="3" height="28" rx="1.5" fill="url(#accent)"/>
+      <rect x="576" y="80" width="36" height="24" rx="6" fill="#161B22" stroke="#30363D"/>
+      <text x="594" y="96" text-anchor="middle" class="mono" font-size="11" fill="#00D9FF">↵</text>
+    </g>
+
+    <!-- rows -->
+    <g class="sans" font-size="14">
+      <rect x="34" y="80" width="24" height="24" rx="6" fill="#161B22" stroke="#21262D"/><text x="46" y="97" text-anchor="middle" class="mono" font-size="11" fill="#8A2BE2">◆</text>
+      <text x="72" y="97" fill="#E6EDF3">Featured Projects</text><text x="72" y="97" dx="128" class="mono" font-size="11" fill="#30363D"> — four systems, built to ship</text>
+
+      <rect x="34" y="126" width="24" height="24" rx="6" fill="#161B22" stroke="#21262D"/><text x="46" y="143" text-anchor="middle" class="mono" font-size="10" fill="#00D9FF">‹›</text>
+      <text x="72" y="143" fill="#E6EDF3">Technology Stack</text><text x="72" y="143" dx="126" class="mono" font-size="11" fill="#30363D"> — the arsenal</text>
+
+      <rect x="34" y="172" width="24" height="24" rx="6" fill="#161B22" stroke="#21262D"/><text x="46" y="189" text-anchor="middle" class="mono" font-size="11" fill="#3FB950">▲</text>
+      <text x="72" y="189" fill="#E6EDF3">Live Analytics</text><text x="72" y="189" dx="103" class="mono" font-size="11" fill="#30363D"> — mission control</text>
+
+      <rect x="34" y="218" width="24" height="24" rx="6" fill="#161B22" stroke="#21262D"/><text x="46" y="235" text-anchor="middle" class="mono" font-size="11" fill="#8A2BE2">⌁</text>
+      <text x="72" y="235" fill="#E6EDF3">Developer Journey</text><text x="72" y="235" dx="132" class="mono" font-size="11" fill="#30363D"> — 2023 → now</text>
+
+      <rect x="34" y="264" width="24" height="24" rx="6" fill="#161B22" stroke="#21262D"/><text x="46" y="281" text-anchor="middle" class="mono" font-size="11" fill="#00D9FF">@</text>
+      <text x="72" y="281" fill="#E6EDF3">Contact</text><text x="72" y="281" dx="57" class="mono" font-size="11" fill="#30363D"> — open a channel</text>
+
+      <rect x="34" y="310" width="24" height="24" rx="6" fill="#161B22" stroke="#21262D"/><text x="46" y="327" text-anchor="middle" class="mono" font-size="11" fill="#E6EDF3">⌂</text>
+      <text x="72" y="327" fill="#E6EDF3">All Repositories</text><text x="72" y="327" dx="112" class="mono" font-size="11" fill="#30363D"> — 30 and counting</text>
+    </g>
+
+    <rect x="10" y="352" width="620" height="1" fill="#21262D"/>
+    <text x="320" y="366" text-anchor="middle" class="mono" font-size="9.5" letter-spacing="1.5" fill="#30363D">↑↓ NAVIGATE&#160;&#160;·&#160;&#160;↵ OPEN&#160;&#160;·&#160;&#160;ESC CLOSE</text>
+  </g>
+</svg>

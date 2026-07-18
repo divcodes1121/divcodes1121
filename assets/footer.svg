@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 880 250" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#8A2BE2"/>
+      <stop offset="1" stop-color="#00D9FF"/>
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <style>
+      .mono { font-family: Consolas, 'SF Mono', Menlo, monospace; }
+      .sans { font-family: 'Segoe UI', system-ui, sans-serif; }
+      .sig  { font-family: Georgia, 'Times New Roman', serif; font-style: italic; }
+      .comet { stroke-dasharray: 70 530; animation: run 5.5s linear infinite; }
+      @keyframes run { from { stroke-dashoffset: 600; } to { stroke-dashoffset: 0; } }
+      .in { opacity: 0; animation: in 1.2s ease-out forwards; }
+      .s1 { animation-delay: .3s; } .s2 { animation-delay: .7s; } .s3 { animation-delay: 1.1s; }
+      @keyframes in { to { opacity: 1; } }
+    </style>
+  </defs>
+
+  <rect width="880" height="250" fill="#0D1117"/>
+
+  <!-- infinity: faint track + travelling comet -->
+  <path d="M 440 78 C 416 44 348 44 348 78 C 348 112 416 112 440 78 C 464 44 532 44 532 78 C 532 112 464 112 440 78 Z"
+        fill="none" stroke="#21262D" stroke-width="2" pathLength="600"/>
+  <path class="comet" d="M 440 78 C 416 44 348 44 348 78 C 348 112 416 112 440 78 C 464 44 532 44 532 78 C 532 112 464 112 440 78 Z"
+        fill="none" stroke="url(#accent)" stroke-width="2.5" stroke-linecap="round" pathLength="600" filter="url(#glow)"/>
+
+  <text x="440" y="148" text-anchor="middle" class="sans in s1" font-size="13" fill="#7D8590">thanks for scrolling — the loop never closes</text>
+
+  <text x="440" y="188" text-anchor="middle" class="sig in s2" font-size="26" fill="#E6EDF3">— Divyanshu Singh</text>
+
+  <text x="440" y="226" text-anchor="middle" class="mono in s3" font-size="10" letter-spacing="3" fill="#30363D">DESIGNED &amp; BUILT BY HAND · DIVOS v4.0 · LUCKNOW · 2026</text>
+</svg>
