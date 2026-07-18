@@ -256,19 +256,11 @@
 
 <br/><br/>
 
-<!-- ╔══════════════════════════════════════════════════════════════════════╗
-     ║  3D CONTRIBUTION SKYLINE — ACTIVATE AFTER FIRST WORKFLOW RUN         ║
-     ║  Commit .github/workflows/3d-contrib.yml, run it once from the       ║
-     ║  Actions tab, then delete these comment markers to reveal the block. ║
-     ╚══════════════════════════════════════════════════════════════════════╝
-
 <img src="https://img.shields.io/badge/%E2%97%86%20DOMAIN%20TOPOLOGY%20%E2%80%94%203D%20SKYLINE-0D1117?style=for-the-badge&labelColor=00D9FF"/>
 
 <br/><br/>
 
 <img src="https://raw.githubusercontent.com/divcodes1121/divcodes1121/main/profile-3d-contrib/profile-night-rainbow.svg" width="98%"/>
-
--->
 
 </div>
 
