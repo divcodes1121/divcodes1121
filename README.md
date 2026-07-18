@@ -225,7 +225,13 @@ Every archive keeps an index card. This one stamps itself.
 
 <br/><br/>
 
-<img src="https://leetcard.jacoblin.cool/Div_Codes1121?theme=dark&font=JetBrains%20Mono&ext=heatmap&border=0&radius=14" width="60%" alt="leetcode profile"/>
+</div>
+
+<img src="https://raw.githubusercontent.com/divcodes1121/divcodes1121/main/assets/generated/forge.svg" width="100%" alt="the forge — leetcode problems by difficulty, hammered nightly"/>
+
+<div align="center">
+
+<samp><a href="https://leetcode.com/u/Div_Codes1121/">inspect the forge on leetcode ↗</a></samp>
 
 <br/><br/>
 
