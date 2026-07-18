@@ -220,7 +220,127 @@ const cargo = `<?xml version="1.0" encoding="UTF-8"?>
 </svg>
 `;
 
+// ── forge.svg — leetcode, problems hammered into solutions ─────────
+// LeetCode's GraphQL is unofficial and may reject datacenter IPs; on
+// failure we keep the previous forge.svg and still succeed the job.
+let forge = null;
+try {
+  const lcq = {
+    query: `query { allQuestionsCount { difficulty count }
+      matchedUser(username: "Div_Codes1121") {
+        profile { ranking }
+        submitStatsGlobal { acSubmissionNum { difficulty count } } } }`,
+  };
+  const lr = await fetch("https://leetcode.com/graphql", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+      Referer: "https://leetcode.com",
+    },
+    body: JSON.stringify(lcq),
+  });
+  if (!lr.ok) throw new Error(`leetcode ${lr.status}`);
+  const lj = await lr.json();
+  const all = Object.fromEntries(lj.data.allQuestionsCount.map(x => [x.difficulty, x.count]));
+  const ac = Object.fromEntries(lj.data.matchedUser.submitStatsGlobal.acSubmissionNum.map(x => [x.difficulty, x.count]));
+  const rank = lj.data.matchedUser.profile.ranking;
+  const solved = ac.All ?? 0;
+  const diffs = [
+    { label: "easy",   n: ac.Easy ?? 0,   of: all.Easy,   color: "#00D9FF" },
+    { label: "medium", n: ac.Medium ?? 0, of: all.Medium, color: "#8A2BE2" },
+    { label: "hard",   n: ac.Hard ?? 0,   of: all.Hard,   color: "#E6EDF3" },
+  ];
+  const dmax = Math.max(...diffs.map(d => d.n), 1);
+  console.log({ solved, rank, diffs: diffs.map(d => `${d.label}:${d.n}`) });
+
+  const rows = diffs.map((d, k) => {
+    const y = 118 + k * 52;
+    const w = Math.max(8, Math.round((d.n / dmax) * 250));
+    return `
+  <text x="560" y="${y}" class="mono" font-size="12" fill="#A1A1AA">${d.label}</text>
+  <rect x="560" y="${y + 12}" width="250" height="7" rx="3.5" fill="#161B22" stroke="#21262D" stroke-width="1"/>
+  <rect class="heat h${k + 1}" x="560" y="${y + 12}" width="${w}" height="7" rx="3.5" fill="${d.color}" opacity=".9"/>
+  <text x="844" y="${y}" text-anchor="end" class="mono" font-size="13" fill="#FFFFFF">${d.n}<tspan fill="#30363D" font-size="10"> / ${d.of}</tspan></text>`;
+  }).join("\n");
+
+  forge = `<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 880 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="ingot" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#8A2BE2"/><stop offset="1" stop-color="#00D9FF"/>
+    </linearGradient>
+    <style>
+      .mono { font-family: ${MONO}; }
+      .px { shape-rendering: crispEdges; }
+      .hammer { transform-box: view-box; transform-origin: 208px 148px;
+                animation: strike 2.8s cubic-bezier(.6,0,.9,1) infinite; }
+      @keyframes strike {
+        0% { transform: rotate(-52deg); } 55% { transform: rotate(-52deg); }
+        63%, 74% { transform: rotate(0deg); } 100% { transform: rotate(-52deg); }
+      }
+      .spark { opacity: 0; animation: spark 2.8s linear infinite; }
+      @keyframes spark {
+        0%, 62% { opacity: 0; transform: translate(0,0); }
+        64% { opacity: 1; }
+        76%, 100% { opacity: 0; transform: translate(var(--dx), var(--dy)); }
+      }
+      .glow { animation: glow 2.8s ease infinite; }
+      @keyframes glow { 0%,60% { opacity: .55; } 64%,76% { opacity: 1; } 100% { opacity: .55; } }
+      .heat { transform-box: fill-box; transform-origin: left center; transform: scaleX(0);
+              animation: heat 12s cubic-bezier(.25,0,.2,1) infinite; }
+      .h1 { animation-delay: .15s; } .h2 { animation-delay: .35s; } .h3 { animation-delay: .55s; }
+      @keyframes heat { 0% { transform: scaleX(0); } 8% { transform: scaleX(1); } 93% { transform: scaleX(1); } 100% { transform: scaleX(0); } }
+      .flame { animation: flame .55s steps(2) infinite; }
+      @keyframes flame { 50% { opacity: .45; } }
+    </style>
+  </defs>
+
+  <rect x="1" y="1" width="878" height="298" rx="14" fill="#0D1117" stroke="#21262D" stroke-width="1.5"/>
+
+  <text x="36" y="42" class="mono" font-size="11" letter-spacing="4" fill="#7D8590">THE FORGE — PROBLEMS HAMMERED INTO SOLUTIONS</text>
+  <text x="844" y="42" text-anchor="end" class="mono flame" font-size="10" fill="#00D9FF">● furnace: lit</text>
+  <path d="M 36 56 H 844" stroke="#21262D" stroke-width="1"/>
+
+  <!-- anvil scene -->
+  <g class="px">
+    <rect x="120" y="236" width="120" height="22" fill="#161B22"/>
+    <rect x="132" y="224" width="96"  height="12" fill="#21262D"/>
+    <rect x="150" y="196" width="60"  height="16" fill="#30363D"/>
+    <rect x="142" y="180" width="92"  height="16" fill="#3D444D"/>
+    <rect x="234" y="184" width="18"  height="8"  fill="#3D444D"/>
+    <rect x="128" y="184" width="14"  height="10" fill="#30363D"/>
+    <rect class="glow" x="168" y="170" width="44" height="10" fill="url(#ingot)"/>
+  </g>
+  <g class="hammer px">
+    <rect x="200" y="142" width="52" height="10" rx="2" fill="#21262D"/>
+    <rect x="246" y="130" width="26" height="32" fill="#3D444D"/>
+    <rect x="246" y="130" width="26" height="6"  fill="#4B535D"/>
+  </g>
+  <rect class="spark px" style="--dx:16px;--dy:-20px"  x="204" y="164" width="4" height="4" fill="#00D9FF"/>
+  <rect class="spark px" style="--dx:-14px;--dy:-16px" x="196" y="166" width="3" height="3" fill="#8A2BE2"/>
+  <rect class="spark px" style="--dx:22px;--dy:-8px"   x="208" y="168" width="3" height="3" fill="#E6EDF3"/>
+  <rect class="spark px" style="--dx:-8px;--dy:-24px"  x="200" y="162" width="3" height="3" fill="#00D9FF"/>
+  <text x="180" y="282" text-anchor="middle" class="mono" font-size="10" fill="#30363D">forge temp: 100°C — coffee-quenched</text>
+
+  <!-- totals -->
+  <text x="420" y="140" text-anchor="middle" class="mono" font-size="56" font-weight="bold" fill="#FFFFFF">${nf.format(solved)}</text>
+  <text x="420" y="166" text-anchor="middle" class="mono" font-size="11" letter-spacing="3" fill="#7D8590">PROBLEMS SOLVED — ALL TIME</text>
+  <text x="420" y="194" text-anchor="middle" class="mono" font-size="12">
+    <tspan fill="#00D9FF">global rank #${nf.format(rank)}</tspan><tspan fill="#30363D">&#160;&#160;·&#160;&#160;</tspan><tspan fill="#A1A1AA">armory of ${nf.format(all.All)}</tspan>
+  </text>
+
+  <!-- difficulty bars -->
+${rows}
+  <text x="560" y="262" class="mono" font-size="10" fill="#30363D">bars scaled to strongest difficulty · counts are live</text>
+</svg>
+`;
+} catch (e) {
+  console.warn(`forge skipped: ${e.message} — previous forge.svg kept`);
+}
+
 await mkdir("assets/generated", { recursive: true });
 await writeFile("assets/generated/station.svg", station);
 await writeFile("assets/generated/cargo.svg", cargo);
-console.log("wrote assets/generated/station.svg, cargo.svg");
+if (forge) await writeFile("assets/generated/forge.svg", forge);
+console.log(`wrote station.svg, cargo.svg${forge ? ", forge.svg" : ""}`);
