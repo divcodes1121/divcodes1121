@@ -96,6 +96,6 @@
   <rect class="spark s2" x="210" y="104" width="4" height="4" fill="#FFFFFF"/>
 
   <text x="36" y="196" class="mono" font-size="10" fill="#30363D">numbers show share of mined volume (%) across 26 original repositories</text>
-  <text x="36" y="232" class="mono" font-size="11" fill="#A1A1AA">total ore: 9.1 MB<tspan fill="#30363D">&#160;&#160;·&#160;&#160;</tspan><tspan fill="#7D8590">rarest find: powershell</tspan></text>
+  <text x="36" y="232" class="mono" font-size="11" fill="#A1A1AA">total ore: 9.2 MB<tspan fill="#30363D">&#160;&#160;·&#160;&#160;</tspan><tspan fill="#7D8590">rarest find: powershell</tspan></text>
   <text x="844" y="232" text-anchor="end" class="mono" font-size="10" fill="#30363D">hotbar — select wisely</text>
 </svg>
