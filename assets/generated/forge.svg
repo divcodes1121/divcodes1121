@@ -61,7 +61,7 @@
   <text x="420" y="140" text-anchor="middle" class="mono" font-size="56" font-weight="bold" fill="#FFFFFF">745</text>
   <text x="420" y="166" text-anchor="middle" class="mono" font-size="11" letter-spacing="3" fill="#7D8590">PROBLEMS SOLVED — ALL TIME</text>
   <text x="420" y="194" text-anchor="middle" class="mono" font-size="12">
-    <tspan fill="#00D9FF">global rank #81,078</tspan><tspan fill="#30363D">&#160;&#160;·&#160;&#160;</tspan><tspan fill="#A1A1AA">armory of 4,033</tspan>
+    <tspan fill="#00D9FF">global rank #81,121</tspan><tspan fill="#30363D">&#160;&#160;·&#160;&#160;</tspan><tspan fill="#A1A1AA">armory of 4,037</tspan>
   </text>
 
   <!-- difficulty bars -->
@@ -74,11 +74,11 @@
   <text x="560" y="170" class="mono" font-size="12" fill="#A1A1AA">medium</text>
   <rect x="560" y="182" width="250" height="7" rx="3.5" fill="#161B22" stroke="#21262D" stroke-width="1"/>
   <rect class="heat h2" x="560" y="182" width="250" height="7" rx="3.5" fill="#8A2BE2" opacity=".9"/>
-  <text x="844" y="170" text-anchor="end" class="mono" font-size="13" fill="#FFFFFF">387<tspan fill="#30363D" font-size="10"> / 2105</tspan></text>
+  <text x="844" y="170" text-anchor="end" class="mono" font-size="13" fill="#FFFFFF">387<tspan fill="#30363D" font-size="10"> / 2107</tspan></text>
 
   <text x="560" y="222" class="mono" font-size="12" fill="#A1A1AA">hard</text>
   <rect x="560" y="234" width="250" height="7" rx="3.5" fill="#161B22" stroke="#21262D" stroke-width="1"/>
   <rect class="heat h3" x="560" y="234" width="61" height="7" rx="3.5" fill="#E6EDF3" opacity=".9"/>
-  <text x="844" y="222" text-anchor="end" class="mono" font-size="13" fill="#FFFFFF">95<tspan fill="#30363D" font-size="10"> / 967</tspan></text>
+  <text x="844" y="222" text-anchor="end" class="mono" font-size="13" fill="#FFFFFF">95<tspan fill="#30363D" font-size="10"> / 969</tspan></text>
   <text x="560" y="262" class="mono" font-size="10" fill="#30363D">bars scaled to strongest difficulty · counts are live</text>
 </svg>
