@@ -12,7 +12,7 @@
       @keyframes blink { 0%,60% { opacity: 1; } 61%,100% { opacity: .25; } }
       .bub { animation: bub 3.4s linear infinite; }
       .u2 { animation-delay: 1.1s; } .u3 { animation-delay: 2.3s; }
-      @keyframes bub { 0% { transform: translateY(0); opacity: 0; } 12% { opacity: .8; } 88% { opacity: .8; } 100% { transform: translateY(-23px); opacity: 0; } }
+      @keyframes bub { 0% { transform: translateY(0); opacity: 0; } 12% { opacity: .8; } 88% { opacity: .8; } 100% { transform: translateY(-31px); opacity: 0; } }
       .orbit { transform-box: view-box; transform-origin: 728px 150px; animation: orbit 9s linear infinite; }
       @keyframes orbit { to { transform: rotate(360deg); } }
       .bar { transform-box: fill-box; transform-origin: bottom; animation: rise 12s ease infinite; }
@@ -38,7 +38,7 @@
   <!-- fuel core: streak -->
   <rect x="56" y="84" width="56" height="166" rx="8" fill="#161B22" stroke="#30363D" stroke-width="1.5"/>
   <g clip-path="url(#tank)">
-    <rect x="56" y="219" width="56" height="31" fill="url(#fuel)" opacity=".9"/>
+    <rect x="56" y="211" width="56" height="39" fill="url(#fuel)" opacity=".9"/>
     <circle class="bub" cx="72" cy="244" r="3" fill="#E6EDF3" opacity=".8"/>
     <circle class="bub u2" cx="88" cy="246" r="2" fill="#E6EDF3" opacity=".8"/>
     <circle class="bub u3" cx="98" cy="245" r="2.5" fill="#E6EDF3" opacity=".8"/>
@@ -46,13 +46,13 @@
   <line x1="112" y1="88" x2="120" y2="88" stroke="#30363D"/><text x="126" y="92" class="mono" font-size="8" fill="#30363D">21d</text>
   <line x1="112" y1="169" x2="120" y2="169" stroke="#30363D"/><text x="126" y="173" class="mono" font-size="8" fill="#30363D">10d</text>
   <text x="84" y="272" text-anchor="middle" class="mono" font-size="11" fill="#A1A1AA">FUEL CORE</text>
-  <text x="84" y="288" text-anchor="middle" class="mono" font-size="12" fill="#FFFFFF">4-day streak</text>
+  <text x="84" y="288" text-anchor="middle" class="mono" font-size="12" fill="#FFFFFF">5-day streak</text>
 
   <!-- center: contributions -->
-  <text x="380" y="132" text-anchor="middle" class="mono" font-size="58" font-weight="bold" fill="#FFFFFF">580</text>
+  <text x="380" y="132" text-anchor="middle" class="mono" font-size="58" font-weight="bold" fill="#FFFFFF">582</text>
   <text x="380" y="158" text-anchor="middle" class="mono" font-size="11" letter-spacing="3" fill="#7D8590">CONTRIBUTIONS — PAST YEAR</text>
   <text x="380" y="184" text-anchor="middle" class="mono" font-size="12">
-    <tspan fill="#00D9FF">today +0</tspan><tspan fill="#30363D">&#160;&#160;·&#160;&#160;</tspan><tspan fill="#A1A1AA">longest 16d</tspan><tspan fill="#30363D">&#160;&#160;·&#160;&#160;</tspan><tspan fill="#A1A1AA">1.6/day</tspan>
+    <tspan fill="#00D9FF">today +2</tspan><tspan fill="#30363D">&#160;&#160;·&#160;&#160;</tspan><tspan fill="#A1A1AA">longest 16d</tspan><tspan fill="#30363D">&#160;&#160;·&#160;&#160;</tspan><tspan fill="#A1A1AA">1.6/day</tspan>
   </text>
 
   <!-- thrusters: last 14 days -->
